@@ -103,7 +103,7 @@ class Auth extends CI_Controller
 		$this->form_validation->set_rules('confirmemail', 'Confirm Email', 'trim|required|valid_email|matches[email]');
 		$this->form_validation->set_rules('pass', 'Password', 'trim|required|min_length[9]|max_length[15]');
 		$this->form_validation->set_rules('confirmpass', 'Confirm Password', 'trim|required|matches[pass]');
-		$this->form_validation->set_rules('referral', 'Referral', 'trim');
+		$this->form_validation->set_rules('referral', 'Referral', 'trim|required');
 
 		if (@$this->security->xss_clean($this->input->post("referral"))) {
 			$ref = $this->security->xss_clean($this->input->post("referral"));
@@ -150,8 +150,8 @@ class Auth extends CI_Controller
 		if ($result->code == 200) {
 			//kirim email registrasi
 
-			$subject = "LibertyBank Registration";
-			$message = "Thank you for registering on LibertyBank<br><br>
+			$subject = "EquoTransfer Registration";
+			$message = "Thank you for registering on EquoTransfer<br><br>
 			username : " . $email . "<br>
 			password : (your chosen password)<br><br>
 			click this <a href='" . base_url("auth/activate?token=") . $result->message->token . "'>link</a> to activate your account<br><br>
@@ -323,17 +323,6 @@ class Auth extends CI_Controller
 	public function recovery()
 	{
 		$token = $this->security->xss_clean($_GET["token"]);
-		/*	    $now=time();
-	    
-	    $result=$this->member->decode_token($token);
-	    if (($result[1]+3600000)<$now){
-    		$this->session->set_flashdata('failed', "<p style='color:black'>Your reset token has been expired, please try again</p>");
-    	    redirect(base_url()."auth/forgotpass");
-            return;
-	    }
-	    
-	    $member = $this->member->get_single_by_token($token);
-*/
 		$this->session->set_flashdata("token", $token);
 		redirect(base_url() . "auth/updatepassword");
 	}
@@ -370,7 +359,7 @@ class Auth extends CI_Controller
 		$result = apitrackless($url);
 		if (!empty(@$result->code == 200)) {
 
-			$subject = "Reset Password for LibertyBank Account";
+			$subject = "Reset Password for EquoTransfer Account";
 			// kirim email forgot password dengan token validasi, lebih dari 1jam expired tokennya
 			$message = "Hi,<br><br>
 
@@ -456,6 +445,7 @@ class Auth extends CI_Controller
 			return  $this->ciqrcode->generate($params); // fungsi untuk generate QR CODE
 		}
 	}
+
 	public function qrcodeuser($kodeqr)
 	{
 		if ($kodeqr) {
@@ -529,12 +519,5 @@ class Auth extends CI_Controller
 		$this->load->view('tamplate/footer');
 	}
 
-	// public function test_notif(){
-	// 	$data['title'] = NAMETITLE . " - Succes Signup";
-
-	// 	$this->load->view('tamplate/header', $data);
-	// 	$this->load->view('auth/signup-notif');
-	// 	$this->load->view('tamplate/footer');
-	// }
 
 }

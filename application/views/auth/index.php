@@ -153,7 +153,7 @@
                         Opening a multi-currency encrypted current account on our platform requires only an email and a password, thus guaranteeing maximum protection of privacy for each FIAT or crypto transaction carried out.
                     </p>
                     <div class="d-flex justify-content-center mt-3">
-                        <a href="<?= base_url(); ?>auth/login" class="btn-discover">
+                        <a href="<?= base_url(); ?>link/multi_currencies" class="btn-discover">
                             <span>
                                 Discover more
                             </span>

@@ -12,10 +12,10 @@
 
             <div class="row mb-3 d-flex flex-column-reverse flex-lg-row justify-content-center align-items-center text-center mt-5 pt-3 features-text">
                 <div class="col-12 col-lg-8 pe-0 pe-lg-5">
-                    <h1 class="f-hahmlet text-start title-top-header multi text-blue-freedy fw-bold">
+                    <h1 class="f-hahmlet text-start title-top-header multi text-green-equo fw-bold">
                         How do we make the anonymity of the accounts and transactions possible?
                     </h1>
-                    <h6 class="text-uppercase text-start f-hahmlet subtitle-top-header multi text-blue-freedy mt-5">
+                    <h6 class="text-uppercase text-start f-hahmlet subtitle-top-header multi text-green-equo mt-5">
                         ENCRYPTED accounts to the Bearer and short codes
                     </h6>
                     <p class="f-roboto text-start" style="color:#505050; ">
@@ -24,18 +24,17 @@
                     </p>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <img class="img-fluid" src="<?= base_url()?>assets/img/img-18.svg" alt="img-18">
+                    <img class="img-fluid" src="<?= base_url()?>assets/img/img-18.png" alt="img-18">
                 </div>
             </div>
 
             <div class="col-12 text-center">
                 <div class="content-freedy">
-
                     <div class="d-flex flex-column flex-md-row flex-wrap justify-content-between">
                         <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
                             <div class="card freedy-card multibtop text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title mb-3 text-blue-freedy f-hahmlet fw-bold  py-2 text-uppercase">No KYC procedure</h5>
+                                    <h5 class="card-title mb-3 f-hahmlet fw-bold  py-2 text-uppercase" style="color: #66898E;">No KYC procedure</h5>
                                     <p class="f-roboto card-text fw-normal" style="color:#505050; ">    
                                         The opening does not require any personal document and no KYC procedure.
                                         The ownership of the short code and the ownership of the funds are identified thanks to the email and password entered when requesting the opening of the account.
@@ -46,7 +45,7 @@
                         <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
                             <div class="card freedy-card multibtop text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title mb-3 text-blue-freedy f-hahmlet fw-bold py-2 text-uppercase">No anti-money laundering procedure</h5>
+                                    <h5 class="card-title mb-3 f-hahmlet fw-bold py-2 text-uppercase" style="color: #66898E;">No anti-money laundering procedure</h5>
                                     <p class="f-roboto card-text fw-normal" style="color:#505050; ">
                                         Our bank does not carry out anti-money laundering (AML) compliance activities, as it legally makes use of the AML which, without fail by law, is carried out by the banking institution that introduced fiat into the banking circuit.
                                     </p>
@@ -56,7 +55,7 @@
                         <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
                             <div class="card freedy-card multibtop text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title mb-3 text-blue-freedy f-hahmlet fw-bold py-2 text-uppercase">anonymity of the Transactions </h5>
+                                    <h5 class="card-title mb-3 f-hahmlet fw-bold py-2 text-uppercase" style="color: #66898E;">anonymity of the Transactions </h5>
                                     <p class="f-roboto card-text fw-normal" style="color:#505050; ">
                                         To maximize the level of customer privacy, all transactions to and from external bank accounts will be handled and processed by multiple third-party payment and collections gateways.
                                     </p>

