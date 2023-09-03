@@ -65,7 +65,7 @@
                         </div>
                         <div class="row">
                             <div class="d-flex flex-row mt-4">
-                                <button class="btn btn-freedy-blue px-4 py-2 mx-auto shadow-none" type="submit"
+                                <button class="btn btn-freedy-green px-4 py-2 mx-auto shadow-none" type="submit"
                                     id="btnconfirm">Confirm</button>
                             </div>
                         </div>

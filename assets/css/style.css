@@ -232,21 +232,21 @@ color: rgba(255, 255, 255, 0.8);
 # Member Top Up
 --------------------------------------------------------------*/
 .btn-confirm {
-  margin-left: 13px;
-  margin-bottom: 6px;
-  padding: 0.7rem 3rem;
-  font-weight: 600;
-  transition: 0.5s;
-  color: #000000;
-  background: linear-gradient(263.23deg, #B5B5B5 6.67%, #FFFFFF 50.3%, #EAE7E7 100%);
-  border-radius: 4px;
-  border: 1px solid #838383;
+    margin-left: 13px;
+    margin-bottom: 6px;
+    padding: 0.7rem 3rem;
+    font-weight: 600;
+    transition: 0.5s;
+    color: #ffffff;
+    background: linear-gradient(263.23deg, #003B43 6.67%, #003B43 50.3%, #003B43 100%);
+    border-radius: 10px;
+    border: 1px solid #838383;
 }
 
-.btn-confirm:hover{
-  background: linear-gradient(263.23deg, #FFFFFF 6.67%, #B5B5B5 50.3%, #EAE7E7 100%);
-  border: 1px solid #838383;
-}
+    .btn-confirm:hover {
+        background: linear-gradient(263.23deg, #003B43 6.67%, #003B43 50.3%, #003B43 100%);
+        border: 1px solid #838383;
+    }
 
 
 /*--------------------------------------------------------------
@@ -335,7 +335,9 @@ color: rgba(255, 255, 255, 0.8);
 
 
 .currencies-card .btn-select-currencies {
-  font-size: 14px;
+    font-size: 14px;
+    color: #003B43;
+
 }
 
 .qrcode-download {
@@ -828,6 +830,7 @@ color: rgba(255, 255, 255, 0.8);
 
 .guide-wallet ol li {
   margin-bottom: 10px;
+  color: white;
 }
 
 
@@ -962,8 +965,8 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 .currencies-card {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .currencies-card div {
@@ -5552,6 +5555,7 @@ color: #000000;
     line-height: 18px;
 
     color: #0F4E97;
+    background-color:#003B43
   }
 
   .b-qr {
@@ -5629,7 +5633,7 @@ color: #000000;
     font-weight: 600;
     font-size: 24px !important;
     line-height: 110%;
-    color: #CB0000 !important;
+    color: #003B43 !important;
   }
 
   .title-top-header.multi {
@@ -8609,6 +8613,7 @@ color: #000000;
 
   .currencies-card div {
     width: 45%;
+
   }
     
 
@@ -9348,10 +9353,10 @@ color: #000000;
     height: 100px;
   }
 
-  .box-code-freedy {
-    border: 3px solid #0066FF;
-    border-radius: 25px;
-  }
+    .box-code-freedy {
+        border: 3px solid #003B43;
+        border-radius: 25px;
+    }
 
   .box-code-freedy .currency-btn-setting a {
     background: #CB0000;
@@ -10426,6 +10431,7 @@ color: #000000;
   .freedy-accordion-button {
     background-color: #004C51;
     border-radius: 10px !important;
+
   }
 
   .freedy-accordion-button:not(.collapsed) {
@@ -11556,7 +11562,7 @@ color: #000000;
     font-size: 30px;
     line-height: 177.9%;
 
-    color: #CB0000;
+    color: #003B43;
   }
 
   .content-freedy p {
@@ -12120,8 +12126,8 @@ color: #000000;
     padding: 0 1rem;
   }
 
-  .navbar-app>.box-navbar-freedy a.logout {
-    background: linear-gradient(97.98deg, #319CFF 8.71%, #AED8FF 42.93%, #0B86F8 122.46%);
+.navbar-app > .box-navbar-freedy a.logout {
+    background: linear-gradient(97.98deg, #003B43 8.71%, #003B43 42.93%, #003B43 122.46%);
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
@@ -12129,11 +12135,11 @@ color: #000000;
     text-align: center;
     border-radius: 9999px;
     padding: 0 1rem;
-  }
+}
 
-  .navbar-app>.box-navbar-freedy a.logout:hover {
-    background: linear-gradient(97.98deg, #AED8FF 8.71%, #0B86F8 42.93%, #319CFF 122.46%);
-  }
+.navbar-app > .box-navbar-freedy a.logout:hover {
+    background: linear-gradient(97.98deg, #003B43 8.71%, #003B43 42.93%, #003B43 122.46%);
+}
 
   .navbar-app>.box-navbar-freedy a.back {
     border:3px solid #0000;
@@ -12144,7 +12150,7 @@ color: #000000;
   }
 
   .navbar-app>.box-navbar-freedy a .icon-menus {
-    color: #0F4E97;
+    color: #FFFF;
     padding: 0.5rem 0.25rem;
   }
 
@@ -12168,10 +12174,10 @@ color: #000000;
     height: 100px;
   }
 
-  .box-code-freedy {
-    border: 3px solid #0066FF;
-    border-radius: 25px;
-  }
+    .box-code-freedy {
+        border: 3px solid #003B43;
+        border-radius: 25px;
+    }
 
   .box-code-freedy .currency-btn-setting a {
     background: #CB0000;
@@ -12240,7 +12246,7 @@ color: #000000;
     font-size: 36px;
     line-height: 30px;
 
-    color: #000000;
+    color: #003B43;
   }
 
   .mywallet .saldo-box a {
@@ -12252,8 +12258,8 @@ color: #000000;
   }
 
   .copy-refcode input {
-    background: #D2E4F5;
-    color: #0066FF !important;
+    background: #FFEAA2;
+    color: #003B43 !important;
   }
 
   .copy-uqcode input {
@@ -12280,7 +12286,7 @@ color: #000000;
 
   .menus-list-app a {
     background: #ffffff;
-    border: 2px solid #0066FF;
+    border: 2px solid #003B43;
     border-radius: 5px;
 
     font-weight: 500;
@@ -12301,11 +12307,11 @@ color: #000000;
     line-height: 32px;
   }
 
-  .menus-list-app a.menus-blue:hover {
-    background: linear-gradient(180deg, #0066FF 50%, #D2E2F5 100%);
-    border: 1px solid #c6c6c6;
-    color: #fff;
-  }
+    .menus-list-app a.menus-blue:hover {
+        background: linear-gradient(180deg, #003B43 50%, #003B43 100%);
+        border: 1px solid #FFCF24;
+        color: #fff;
+    }
 
   .menus-list-app a.menus-blue svg {
     fill: #000000;
@@ -12340,7 +12346,7 @@ color: #000000;
   }
 
   .curencies-list-app .curencies-list {
-    border: 1px solid #0066FF;
+    border: 1px solid #003B43;
     border-radius: 5px;
     color: #000000;
 
@@ -12350,8 +12356,8 @@ color: #000000;
   }
 
   .curencies-list-app .curencies-list:hover {
-    background: linear-gradient(180deg, #0066FF 50%, #D2E2F5 100%);
-    border: 1px solid #c6c6c6;
+    background: linear-gradient(180deg, #003B43 50%, #003B43 100%);
+    border: 1px solid #003B43;
     border-radius: 5px;
 
     font-weight: 600;
@@ -12710,7 +12716,7 @@ color: #000000;
     margin-left: 0 !important;
     width: 3.5em;
     height: 1.5em;
-    background-color: #0066FF !important;
+    background-color: #003B43!important;
     background: url(../img/checkbox-ball-chacked.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -13099,16 +13105,17 @@ color: #000000;
   }
 
   .recive-bank a {
-    background: linear-gradient(90deg, #0066FF 0%, #0047B1 100%);
-    color: #FFFFFF;
+    background: linear-gradient(90deg, #003B43 0%, #003B43 100%);
+    color: #ffffff;
     border-radius: 8px;
     font-weight: 600;
     font-size: 18px;
     line-height: 34px;
+    border : 2px solid #003B43;
   }
 
   .recive-bank a:hover {
-    background: linear-gradient(90deg, #0F4E97 0%,  #0066FF 100%);
+    background: linear-gradient(90deg, #003B43 0%,  #003B43 100%);
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 600;
@@ -13127,23 +13134,34 @@ color: #000000;
     font-size: 18px;
     line-height: 22px;
     color: #ffffff;
-    background-color: #0066FF;
+    background-color: #003B43;
     border-radius: 9999px;
   }
 
   .btn-receive-bank:hover {
-    background-color: #0055D4;
+    background-color: #003B43;
     color: #ffffff;
   }
-
+.btn-search {
+    background-color: #003B43;
+    color: #ffffff;
+ }
+.btn-search:hover {
+    background-color: #003B43;
+    color: #ffffff;
+}
 
   .btn-wallet-cancle {
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
-
-    color: #0F4E97;
+    background-color:#003B43;
+    color: #ffffff;
   }
+.btn-wallet-cancle:hover {
+    background-color: #003B43;
+    color: #ffffff;
+}
 
   .b-qr {
     font-weight: 700;
@@ -13213,7 +13231,7 @@ color: #000000;
     font-weight: 600;
     font-size: 30px !important;
     line-height: 110%;
-    color: #CB0000 !important;
+    color: #003B43 !important;
   }
 
   .title-top-header.multi {
@@ -13238,7 +13256,7 @@ color: #000000;
   }
 
   .freedy-accordion-item {
-    border: 3px solid #FFE500 !important;
+    border: 2px solid #000000 !important;
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
     background-color: #004C51;
@@ -13247,6 +13265,7 @@ color: #000000;
   .freedy-accordion-button {
     background-color: #004C51;
     border-radius: 10px !important;
+
   }
 
   .freedy-accordion-button:not(.collapsed) {
@@ -13282,7 +13301,7 @@ color: #000000;
   }
 
   .freedy-card {
-    border: 4px solid  #0066FF;
+    border: 4px solid  #003B43;
     border-radius: 5px;
     padding: 0.75rem;
     min-height: 460px;
@@ -13832,26 +13851,25 @@ color: #000000;
 }
 
 .btn-head-crypto {
-  border: 1px solid #0066FF;
-  border-radius: 2px;
+    border: 1px solid #003B43;
+    border-radius: 2px;
 }
 
 .btn-head-crypto .crypto {
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 113%;
-
-  display: inline-block;
-  background: transparent;
-  border-radius: 5px;
-  color: #0F4E97;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 113%;
+    display: inline-block;
+    background: transparent;
+    border-radius: 5px;
+    color: #003B43;
 }
 
-.btn-head-crypto .crypto.active {
-  background: #0066FF;
-  border-radius: 1px;
-  color: #ffffff;
-}
+    .btn-head-crypto .crypto.active {
+        background: #003B43;
+        border-radius: 1px;
+        color: #ffffff;
+    }
 
 .btn-head-crypto .crypto.active:hover {
   color: #ffffff;
@@ -13942,6 +13960,7 @@ color: #000000;
   display: flex;
   flex-direction: column;
   width: 220px;
+
 }
 
 .in-crypto span {
@@ -13953,34 +13972,35 @@ color: #000000;
   color: #000000;
 }
 
-.in-crypto .box-crypto {
-  background: linear-gradient(88.92deg, #319CFF 0.54%, #B7DCFF 47.28%, #0B86F8 96.97%);
-  border: 1px solid #0F4E97;
-  border-radius: 10px;
-  padding: 1rem;
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-}
+    .in-crypto .box-crypto {
+        background: linear-gradient(88.92deg, #003B43 0.54%, #578187 47.00%, #336c74 90.00%);
+        border: 1px solid #0F4E97;
+        border-radius: 10px;
+        padding: 1rem;
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+    }
 
 .in-crypto .box-crypto p {
   font-weight: 700;
   line-height: 23px;
   text-align: center;
 
-  color: #000000;
+  color: #dde4f1;
 }
 
 .box-p-crypto {
-  background: linear-gradient(97.98deg, #319CFF 8.71%, #AED8FF 42.93%, #0B86F8 122.46%);
-  border: 1px solid #0F4E97;
-  padding: 1rem;
-  margin: 2rem 0;
-  display: inline-block;
-  border-radius: 5px;
+    background: linear-gradient(97.98deg, #003B43 8.71%, #578187 42.93%, #336c74 122.46%);
+    border: 1px solid #0F4E97;
+    padding: 1rem;
+    margin: 2rem 0;
+    display: inline-block;
+    border-radius: 5px;
 }
 
 .box-p-crypto p {
   margin: 0;
   font-weight: 500;
+  color: #dde4f1;
 }

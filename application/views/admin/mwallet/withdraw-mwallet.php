@@ -22,12 +22,12 @@
             <div class="col-12 my-5 text-center">
                 <?php if (file_exists(APPPATH . 'views/admin/mwallet/currency/' . $_SESSION['currency'] . '.php')) { ?>
                 <a href="<?= base_url() ?>admin/mwallet/wdlocal"
-                    class="btn btn-freedy-blue fw-bold px-5 py-3 mx-3">Local
+                    class="btn btn-freedy-green fw-bold px-5 py-3 mx-3">Local
                     Bank</a>
 
                 <?php if (($_SESSION["currency"] == "USD") || ($_SESSION["currency"] == "EUR") || ($_SESSION["currency"] == "GBP")) { ?>
                 <a href="<?= base_url() ?>admin/mwallet/wdinter"
-                    class="btn btn-freedy-blue fw-bold px-5 py-3 mx-3">Outside
+                    class="btn btn-freedy-green fw-bold px-5 py-3 mx-3">Outside
                     Circuit</a>
                 <?php }
                 } else { ?>

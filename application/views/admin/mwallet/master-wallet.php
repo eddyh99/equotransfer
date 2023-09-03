@@ -7,7 +7,7 @@
             <?php $this->load->view("admin/header"); ?>
             <div class="col-12 my-5">
                 <a href="<?= base_url() ?>admin/mwallet/withdraw"
-                    class="btn btn-freedy-blue fw-bold px-5 py-3">Withdraw</a>
+                    class="btn btn-freedy-green fw-bold px-5 py-3">Withdraw</a>
             </div>
             <div class="col-12 card mb-5">
                 <div class="card-header fw-bold">

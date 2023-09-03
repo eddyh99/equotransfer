@@ -43,7 +43,7 @@
                         </div>
                         <div class="bot">
                             <p>
-                                Invite people/companies to register on <span translate="no"> LibertyBank </span>
+                                Invite people/companies to register on <span translate="no"> EquoTransfer </span>
                                 using your link
                             </p>
                         </div>

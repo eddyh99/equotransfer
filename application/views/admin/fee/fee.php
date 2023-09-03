@@ -143,7 +143,7 @@
                             readonly>
                     </div>
                     <div class="text-start">
-                        <a id="editfee" class="btn btn-primary">Edit</a>
+                        <a id="editfee" class="btn btn-green">Edit</a>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 <div class="col-12 box-dashboard-freedy-top px-3 py-5 mt-3 mb-4 d-flex flex-row align-items-center">
     <div class="d-flex flex-column me-auto">
-        <h3 class="fw-bold text-blue-freedy mb-4">MASTER WALLET <?= $_SESSION["mwallet"] ?></h3>
+        <h3 class="fw-bold text-green-freedy mb-4">MASTER WALLET <?= $_SESSION["mwallet"] ?></h3>
         <?php if($_SESSION["role"]=="admin"){?>
             <h6 class="fw-bold">Balance</h6>
             <h4 class="fw-bold"><?= $_SESSION["symbol"] ?> <?= number_format(balanceadmin($_SESSION["currency"]),2) ?></h4>

@@ -30,7 +30,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Step 2</h5>
                         <p class="card-text">Create textual and visual content on your website / social media to
-                            advertise <span translate="no"> LibertyBank </span></p>
+                            advertise <span translate="no"> EquoTransfer </span></p>
                     </div>
                 </div>
             </div>

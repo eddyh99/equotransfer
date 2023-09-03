@@ -39,7 +39,7 @@
                                             <?php } ?>
                                         </select>
                                     </div>
-                                    <button id="search" class="mt-4 btn btn-primary">Search</button>
+                                    <button id="search" class="mt-4 btn btn-search">Search</button>
                                     </div>
                                 </div>
                             </div>

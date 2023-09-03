@@ -13,12 +13,12 @@
                     <div class="col-12 infobank-list-app f-jakarta my-4">
                         <div class="col-12">
                             <div class="text-center mt-4">
-                                <span class="me-auto f-poppins fs-4 title-top-navbar">Confirmation</span>
+                                <span class="me-auto f-poppins fs-4 ">Confirmation</span>
                             </div>
                         </div>
                         <div class="col-8 mx-auto mt-4">
                             <div class="text-center">
-                                <span class="me-auto f-inter fs-5 title-top-navbar">Do you want to confirm the amount ?</span>
+                                <span class="me-auto f-inter fs-5 ">Do you want to confirm the amount ?</span>
                             </div>
                         </div>
                         <div class="col-12 py-4">
