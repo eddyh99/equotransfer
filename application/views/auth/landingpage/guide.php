@@ -39,9 +39,9 @@
                         <path d="M-195 4.99999C-195 2.23857 -192.761 0 -190 0H106C108.761 0 111 2.23858 111 5V344C111 346.761 108.761 349 106 349H-190C-192.761 349 -195 346.761 -195 344V4.99999Z" fill="url(#paint0_linear_104_17080)"/>
                         <defs>
                         <linearGradient id="paint0_linear_104_17080" x1="-195" y1="247.208" x2="132.905" y2="241.764" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#319CFF"/>
-                        <stop offset="0.444301" stop-color="#B7DCFF"/>
-                        <stop offset="0.916667" stop-color="#0B86F8"/>
+                        <stop stop-color="#336c74"/>
+                        <stop offset="0.444301" stop-color="#578187"/>
+                        <stop offset="0.916667" stop-color="#003B43"/>
                         </linearGradient>
                         </defs>
                     </svg>
@@ -52,9 +52,9 @@
                             <rect width="306" height="349" rx="5" fill="url(#paint0_linear_104_17079)"/>
                             <defs>
                             <linearGradient id="paint0_linear_104_17079" x1="5.08901e-08" y1="247.208" x2="327.905" y2="241.764" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#319CFF"/>
-                            <stop offset="0.444301" stop-color="#B7DCFF"/>
-                            <stop offset="0.916667" stop-color="#0B86F8"/>
+                            <stop stop-color="#003B43"/>
+                            <stop offset="0.444301" stop-color="#578187"/>
+                            <stop offset="0.916667" stop-color="#336c74"/>
                             </linearGradient>
                             </defs>
                         </svg>
@@ -170,7 +170,7 @@
                                 <div class="card freedy-card small text-center">
                                     <div class="card-body">
                                         <h5 class="card-title f-hahmlet text-blue-freedy fw-bold pb-3">Step 1</h5>
-                                        <p class="card-text f-jakarta"><b>Top up wallet</b> (the top up is not a credit transfer and
+                                        <p class="card-textblack f-jakarta"><b>Top up wallet</b> (the top up is not a credit transfer and
                                             therefore is not fiscally relevant as it is not comparable to a payment).</p>
                                     </div>
                                 </div>
@@ -179,7 +179,7 @@
                                 <div class="card freedy-card small text-center">
                                     <div class="card-body">
                                         <h5 class="card-title f-hahmlet text-blue-freedy fw-bold pb-3">Step 2</h5>
-                                        <p class="card-text f-jakarta"><b>Convert</b> the amount to export into the currency of the
+                                        <p class="card-textblack f-jakarta"><b>Convert</b> the amount to export into the currency of the
                                             destination country (the currency conversion is also not fiscally relevant).</p>
                                     </div>
                                 </div>
@@ -188,7 +188,7 @@
                                 <div class="card freedy-card small text-center">
                                     <div class="card-body">
                                         <h5 class="card-title f-hahmlet text-blue-freedy fw-bold pb-3">Step 3</h5>
-                                        <p class="card-text f-jakarta"><b>Send</b> the converted amount, via our platform, as a
+                                        <p class="card-textblack f-jakarta"><b>Send</b> the converted amount, via our platform, as a
                                             national transfer (with this procedure the international transfer is
                                             eliminated).</p>
                                     </div>
@@ -228,10 +228,10 @@
                 <div class="col-12 mb-5">
                     <div class="d-flex flex-column flex-md-row flex-wrap justify-content-center">
                         <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
-                            <h5 class="card-title my-3 text-blue-freedy linear fw-bold ">Step 1</h5>
+                            <h5 class="card-title my-3 text-green-freedy linear fw-bold ">Step 1</h5>
                             <div class="card freedy-card text-center">
                                 <div class="card-body">
-                                    <p class="card-text">
+                                    <p class="card-textblack">
                                         <span class="fw-bolder pb-3">
                                             Top up your wallet by bank transfers
                                         </span>
@@ -244,10 +244,10 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
-                            <h5 class="card-title my-3 text-blue-freedy linear fw-bold">Step 2</h5>
+                            <h5 class="card-title my-3 text-green-freedy linear fw-bold">Step 2</h5>
                             <div class="card freedy-card text-center">
                                 <div class="card-body">
-                                    <p class="card-text">
+                                    <p class="card-textblack">
                                         <span class="fw-bolder pb-3">
                                             Select one of the currencies
                                         </span>
@@ -258,10 +258,10 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
-                            <h5 class="card-title my-3 text-blue-freedy linear fw-bold">Step 3</h5>
+                            <h5 class="card-title my-3 text-green-freedy linear fw-bold">Step 3</h5>
                             <div class="card freedy-card text-center">
                                 <div class="card-body">
-                                    <p class="card-text">
+                                    <p class="card-textblack">
                                         <span class="fw-bolder pb-3">
                                             Enter the amount
                                         </span>
@@ -274,10 +274,10 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
-                            <h5 class="card-title my-3 text-blue-freedy linear fw-bold">Step 4</h5>
+                            <h5 class="card-title my-3 text-green-freedy linear fw-bold">Step 4</h5>
                             <div class="card freedy-card text-center">
                                 <div class="card-body">
-                                    <p class="card-text">
+                                    <p class="card-textblack">
                                         <span class="fw-bolder pb-3">
                                             Congratulations!
                                         </span>
@@ -340,9 +340,9 @@
                             <path d="M-225 4.99999C-225 2.23856 -222.761 0 -220 0H104C106.761 0 109 2.23858 109 5V512C109 514.761 106.761 517 104 517H-220C-222.761 517 -225 514.761 -225 512V4.99999Z" fill="url(#paint0_linear_104_16354)"/>
                             <defs>
                             <linearGradient id="paint0_linear_104_16354" x1="-225" y1="366.208" x2="132.954" y2="361.83" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#319CFF"/>
-                            <stop offset="0.444301" stop-color="#B7DCFF"/>
-                            <stop offset="0.916667" stop-color="#0B86F8"/>
+                            <stop stop-color="#336c74"/>
+                        <stop offset="0.444301" stop-color="#578187"/>
+                        <stop offset="0.916667" stop-color="#003B43"/>
                             </linearGradient>
                             </defs>
                         </svg>
@@ -352,9 +352,9 @@
                             <path d="M-225 4.99999C-225 2.23856 -222.761 0 -220 0H104C106.761 0 109 2.23858 109 5V512C109 514.761 106.761 517 104 517H-220C-222.761 517 -225 514.761 -225 512V4.99999Z" fill="url(#paint0_linear_104_16354)"/>
                             <defs>
                             <linearGradient id="paint0_linear_104_16354" x1="-225" y1="366.208" x2="132.954" y2="361.83" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#319CFF"/>
-                            <stop offset="0.444301" stop-color="#B7DCFF"/>
-                            <stop offset="0.916667" stop-color="#0B86F8"/>
+                            <stop stop-color="#003B43"/>
+                            <stop offset="0.444301" stop-color="#578187"/>
+                            <stop offset="0.916667" stop-color="#336c74"/>
                             </linearGradient>
                             </defs>
                         </svg>
@@ -550,7 +550,7 @@
                 <div class="col-12 my-5">
                     <div class="logo-text text-center">
                         <div class="d-flex justify-content-center align-items-center mx-auto ">
-                            <img src="<?= base_url() ?>assets/img/speedybank/iconin-guide-7.png" alt="icon-guide-7">
+                            <img src="<?= base_url() ?>assets/img/icon-guide-7.svg" alt="icon-guide-7">
                         </div>
                         <span class="f-hahmlet fw-bolder text-blue-freedy mt-3">Find me</span>
                     </div>
