@@ -75,7 +75,7 @@
                                     You have to use your Short Code in order to top up your wallet and receive incoming transfers.
                                 </p>
                                 <p >
-                                    <span translate="no"> LibertyBank </span> offers the possibility of making bank transfers, directly from your wallet, to any  bank accounts, even not under your name,without any documentation required and anonymously.
+                                    <span translate="no"> EquoTransfer </span> offers the possibility of making bank transfers, directly from your wallet, to any  bank accounts, even not under your name,without any documentation required and anonymously.
                                 </p>
                             </div>
                         </div>
@@ -157,8 +157,8 @@
                     <div class="col-12 col-lg-8 text-center mb-5 mx-auto">
                         <p class="f-jakarta">
                             Given the increasingly stringent and restrictive regulations on international bank transfers,
-                            <span translate="no"> LibertyBank </span> offers a simple, risk-free and 100% legal solution. <br>
-                            The user who wants to send capital abroad will have to open a <span translate="no"> LibertyBank
+                            <span translate="no"> EquoTransfer </span> offers a simple, risk-free and 100% legal solution. <br>
+                            The user who wants to send capital abroad will have to open a <span translate="no"> EquoTransfer
                             </span> account and will
                             have to carry out the following procedure to remain in the legality and away from tax
                             assessments:
@@ -203,7 +203,7 @@
                             <img src="<?= base_url() ?>assets/img/img-13.svg" alt="logo" class="img-fluid">
                         </div>
                         <p class="col-12 col-lg-9 mx-auto f-jakarta">
-                            <span translate="no"> LibertyBank, </span> making use of the licensee company's capitals, partners and offices, in order to respect the laws in force on the matter, will not carry out an international transfer but will send a national transfer from the current account of the country of destination to the current account required by the sender, in the same country, carrying out an internal clearing only afterwards (the internal clearing procedure is 100% legal).
+                            <span translate="no"> EquoTransfer, </span> making use of the licensee company's capitals, partners and offices, in order to respect the laws in force on the matter, will not carry out an international transfer but will send a national transfer from the current account of the country of destination to the current account required by the sender, in the same country, carrying out an internal clearing only afterwards (the internal clearing procedure is 100% legal).
                         </p>
                     </div>
                 </div>
@@ -219,7 +219,7 @@
                     </div>
                 </div>
                 <div class="col-12 mb-5 text-center  features-text">
-                    <h3 class="fw-semibold f-hahmlet">With <span translate="no"> LibertyBank </span> your money travels with you.</h3>
+                    <h3 class="fw-semibold f-hahmlet">With <span translate="no"> EquoTransfer </span> your money travels with you.</h3>
                     <p class="f-jakarta col-12 col-lg-7 mx-auto mt-3">Follow few easy steps to instant convert FIAT currencies and make easy payments from wherever
                         you want
                     </p>
@@ -304,7 +304,7 @@
                     <div class="row">
                         <div class="col-12 col-md-8 features-text">
                             <p class="f-jakarta">
-                                The wallet functions of <span translate="no"> LibertyBank </span> are suitable for all daily
+                                The wallet functions of <span translate="no"> EquoTransfer </span> are suitable for all daily
                                 payments, even for small
                                 amounts; everywhere in the world.
                             </p>
@@ -373,14 +373,14 @@
                             </div>
                             <div class="col-12 col-lg-9 mx-auto text-center mt-4 features-text">
                                 <p class="text-black f-jakarta">
-                                    <span translate="no"> LibertyBank </span> offers the possibility to buy and sell cryptocurrencies using FIAT, directly from any FIAT balance of your <span translate="no"> LibertyBank </span>  wallet.
+                                    <span translate="no"> EquoTransfer </span> offers the possibility to buy and sell cryptocurrencies using FIAT, directly from any FIAT balance of your <span translate="no"> EquoTransfer </span>  wallet.
                                     <br>
-                                    <span translate="no"> LibertyBank </span> also gives the possibility to withdraw
+                                    <span translate="no"> EquoTransfer </span> also gives the possibility to withdraw
                                     your funds by converting them INTO ANY FIAT CURRENCY; after conversion you can send your funds to any bank account, even if it is not under your name,
                                     thanks to the integrated <span translate="no"> trade-off </span> platform.
                                 </p>
                                 <p class="text-black f-jakarta">
-                                    On <span translate="no"> LibertyBank, </span> being a trade-off platform,  the ‘’Buy’’ and ‘’Sell’’ orders are just  ‘’LIMIT’’ orders.
+                                    On <span translate="no"> EquoTransfer, </span> being a trade-off platform,  the ‘’Buy’’ and ‘’Sell’’ orders are just  ‘’LIMIT’’ orders.
                                 </p>
                             </div>
                         </div>
@@ -392,14 +392,14 @@
                     <div class="col-12 text-center mb-5 features-text ">
                         <h3 class="fw-bold text-blue-freedy f-hahmlet">How to top up crypto wallet</h3>
 
-                        <p class="mt-3 f-jakarta">In order to topup your <span translate="no"> LibertyBank </span> crypto wallet follow the procedure below :</p>
+                        <p class="mt-3 f-jakarta">In order to topup your <span translate="no"> EquoTransfer </span> crypto wallet follow the procedure below :</p>
 
                     </div>
                     <div class="d-flex flex-row justify-content-center flex-wrap">
                         <div class="in-crypto">
                             <span>Step 1</span>
                             <div class="box-crypto">
-                                <p class="mb-3">Log in to your <b class="fw-semibold" translate="no"> LibertyBank </b> wallet and select
+                                <p class="mb-3">Log in to your <b class="fw-semibold" translate="no"> EquoTransfer </b> wallet and select
                                     crypto</p>
                                 <img class="my-auto img-fluid" src="<?= base_url() ?>assets/img/crypto-1.svg" alt="crypto-1">
                             </div>
@@ -534,7 +534,7 @@
                     <div class="row">
                         <div class="col-12 col-md-6 my-auto features-text">
                             <p class="f-jakarta px-5">With this function integrated into your wallet, you will be able to see all the activities
-                                that accept <span translate="no"> LibertyBank </span> as a collection and payment system.
+                                that accept <span translate="no"> EquoTransfer </span> as a collection and payment system.
                             </p>
                         </div>
                         <div class="col-6 d-none d-md-grid mx-auto">
@@ -558,12 +558,12 @@
                 <div class="col-12 mb-5">
                     <div class="row features-text d-flex align-items-start">
                         <div class="col-12 col-md-6 text-md-start">
-                            <p class="f-jakarta"><span translate="no"> LibertyBank </span> allows you to increase the visibility of your business
+                            <p class="f-jakarta"><span translate="no"> EquoTransfer </span> allows you to increase the visibility of your business
                                 by including it in the
                                 search section that will be in every single wallet of all the users.
                                 <br>
                                 In this way your company will be easily accessible and traceable by all users who use
-                                <span translate="no"> LibertyBank </span> for daily payments.
+                                <span translate="no"> EquoTransfer </span> for daily payments.
                             </p>
                             <h6 class="fw-bolder f-hahmlet mt-5 " style="color: #0066FF;">
                                 START TO APPLY NOW FOR FIND ME SERVICE
@@ -617,7 +617,7 @@
                             </p>
 
                             <p class="fw-semibold f-jakarta text-decoration-underline">
-                                    contact@libertybank.com
+                                    contact@EquoTransfer.com
                             </p>
                         </div>
                     </div>
@@ -639,7 +639,7 @@
                         <div class="row features-text mx-auto">
                             <div class="col-12 col-md-7">
                                 <p class="f-jakarta">
-                                    <span translate="no"> LibertyBank </span> offers your company, a multi-currency collection
+                                    <span translate="no"> EquoTransfer </span> offers your company, a multi-currency collection
                                     and payment system that
                                     can
                                     be easily integrated into your e-commerce :
@@ -649,7 +649,7 @@
                                         <ul class="ps-0 f-jakarta">
                                             <li class="ali text-black">Integration is free of charge</li>
                                             <li class="ali text-black">No monthly and no annual fees</li>
-                                            <li class="ali text-black">Collections in real time from users of the <span translate="no"> LibertyBank </span> circuit
+                                            <li class="ali text-black">Collections in real time from users of the <span translate="no"> EquoTransfer </span> circuit
                                             </li>
                                             <li class="ali text-black">Cheaper than credit cards</li>
                                             <li class="ali text-black">Reception and sending of national and international bank transfers at the lowest rates on the market</li>

@@ -2122,7 +2122,7 @@ progress {
 }
 
 .table-primary {
-  --bs-table-bg: #cfe2ff;
+  --bs-table-bg: #2f8e9b;
   --bs-table-striped-bg: #c5d7f2;
   --bs-table-striped-color: #000;
   --bs-table-active-bg: #bacbe6;
@@ -3382,7 +3382,16 @@ fieldset:disabled .btn {
   background-color: #0d6efd;
   border-color: #0d6efd;
 }
-
+.btn-green {
+    color: #fff;
+    background-color: #003B43;
+    border-color: #0d6efd;
+}
+.btn-green:hover {
+    color: #fff;
+    background-color: #018294;
+    border-color: #0d6efd;
+}
 .btn-primary:hover {
   color: #fff;
   background-color: #0b5ed7;
@@ -5340,8 +5349,9 @@ fieldset:disabled .btn {
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  background-color: rgba(0, 80, 184, 0.25);
+  background-color: #0e616c;
   border-bottom: 1px solid rgba(203, 0, 0, 0.125);
+  color: white;
 }
 
 .card-header:first-child {
@@ -12853,7 +12863,7 @@ body {
 
 /* Freedy CSS */
 .box-dashboard-freedy-top {
-  border: 3px solid #0066FF;
+  border: 3px solid #003B43;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
   border-radius: 35px;
 }
@@ -12863,13 +12873,13 @@ body {
 }
 
 .list-currency a>.box-list {
-  background: #0066FF;
+  background: #003B43 ;
   border-radius: 10px;
   color: #fff;
 }
 
 .list-currency a>.box-list:hover{
-  background: #00337E;
+  background: #026f7e;
 }
 
 .text-blue-freedy {
@@ -12878,7 +12888,24 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.text-green-freedy {
+    background: linear-gradient(263.23deg, #003B43 6.67%, #003B43 70.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.btn-freedy-green {
+    background: linear-gradient(263deg, #336c74 0%, #578187 50%, #003B43 100%);
+    border-radius: 9999px;
+    border: 1px solid #0F4E97;
+    color: #ffffff;
+}
 
+.btn-freedy-green:hover {
+    background: linear-gradient(263deg, #003B43 0%, #578187 50%, #336c74 100%);
+    border: 1px solid #0F4E97;
+    color: #ffffff;
+}
 .btn-freedy-blue {
   background: linear-gradient(263deg, #319CFF 0%, #AED8FF 50%, #0B86F8 100%);
   border-radius: 9999px;

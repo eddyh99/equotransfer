@@ -49,7 +49,7 @@
                             </div>
                             <div class="row">
                                 <div class=" mt-4">
-                                    <button class="btn btn-freedy-blue shadow-none px-5 py-2 ms-3" type="submit" id="btnconfirm">Next</button>
+                                    <button class="btn btn-freedy-green shadow-none px-5 py-2 ms-3" type="submit" id="btnconfirm">Next</button>
                                 </div>
                             </div>
                         </form>

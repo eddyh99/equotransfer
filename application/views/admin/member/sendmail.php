@@ -62,7 +62,7 @@
                             </div>
                             <div class="mb-3">
                                 <button id="btnconfirm"
-                                    class="btn btn-freedy-blue px-4 py-2 mx-auto shadow-none">Send</button>
+                                    class="btn btn-freedy-green px-4 py-2 mx-auto shadow-none">Send</button>
                             </div>
                         </div>
                     </form>

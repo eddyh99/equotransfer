@@ -8,7 +8,7 @@
                         <span class="mt-3" style="display: block;">Your transfer successed</span>
                     </div>
                     <a href="<?= base_url() ?>admin/mwallet?cur=<?= $_SESSION['currency']?>"
-                        class="btn btn-freedy-blue px-4 py-2 shadow-none mb-5">Back</a>
+                        class="btn btn-freedy-green px-4 py-2 shadow-none mb-5">Back</a>
                 </div>
             </div>
         </div>
