@@ -228,6 +228,7 @@ color: rgba(255, 255, 255, 0.8);
     .btn-confirm:hover {
         background: linear-gradient(263.23deg, #003B43 6.67%, #003B43 50.3%, #003B43 100%);
         border: 1px solid #838383;
+        color: #ffffff;
     }
 
 
@@ -988,21 +989,21 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 .btn-unique-code {
-  width: 130px;
-  height: 50px;
-  font-size: 14px;
-  background: linear-gradient(88.92deg, #319CFF 0.54%, #B7DCFF 47.28%, #0B86F8 96.97%);
-  box-shadow: 0px 15px 50px rgba(222, 95, 143, 0.12);
-  border-radius: 99999px;
-  border: 0px solid transparent;
-  margin: auto;
-  color: #000000;
+    width: 130px;
+    height: 50px;
+    font-size: 14px;
+    background: #003B43;
+    box-shadow: 0px 15px 50px rgba(222, 95, 143, 0.12);
+    border-radius: 99999px;
+    border: 0px solid transparent;
+    margin: auto;
+    color: #ffffff;
 }
 
-.btn-unique-code:hover {
-  background: linear-gradient(88.92deg, #B7DCFF 0.54%, #0B86F8 47.28%, #0B86F8 96.97%);
-  color: #000000;
-}
+    .btn-unique-code:hover {
+        background: #00A7DC;
+        color: #ffffff;
+    }
 
 .text-findme {
   font-size: 14px !important;
@@ -6168,7 +6169,7 @@ color: #000000;
     border-radius:999999px;
     background:
       linear-gradient(white,white) padding-box,
-      linear-gradient(#319CFF,#AED8FF) border-box;
+      linear-gradient(#003B43,#003B43) border-box;
   }
 
   .navbar-app>.box-navbar-freedy a .icon-menus {
@@ -9304,7 +9305,7 @@ color: #000000;
     border-radius:999999px;
     background:
       linear-gradient(white,white) padding-box,
-      linear-gradient(#319CFF,#AED8FF) border-box;
+      linear-gradient(#003B43,#AED8FF) border-box;
   }
 
   .navbar-app>.box-navbar-freedy a .icon-menus {
@@ -11720,7 +11721,7 @@ color: #000000;
   }
 
   .content-freedy.circle ul li {
-    background: url(../img/list-circle-blue.png) no-repeat left 5px !important;
+    background: url(../img/list-circle-green.png) no-repeat left 5px !important;
     background-size: 15px !important;
     padding: 0 0 0 2rem;
     margin: 0;
@@ -12090,7 +12091,7 @@ color: #000000;
     font-size: 17px;
     line-height: 21px;
 
-    color: #0F4E97;
+    color: #003B43;
   }
 
   .navbar-app>.box-navbar-freedy {
@@ -12106,7 +12107,7 @@ color: #000000;
     line-height: 20px;
     color: #0F4E97;
     text-align: center;
-    border: 2px solid #319CFF;
+    border: 2px solid #003B43;
     border-radius: 9999px;
     padding: 0 1rem;
   }
@@ -12131,7 +12132,7 @@ color: #000000;
     border-radius:999999px;
     background:
       linear-gradient(white,white) padding-box,
-      linear-gradient(#319CFF,#AED8FF) border-box;
+      linear-gradient(#003B43,#003B43) border-box;
   }
 
   .navbar-app>.box-navbar-freedy a .icon-menus {
@@ -12284,7 +12285,7 @@ color: #000000;
   .menus-list-app a.menus-blue {
     background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right, #0F4E97, #228fb1, #00A7DC) border-box;
-    border: 1px solid transparent;
+    border: 1px solid #003B43;
     border-radius: 20px;
     color: #000000;
     font-weight: 500;
@@ -12658,7 +12659,7 @@ color: #000000;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
-    color: #0F4E97;
+    color: #003B43;
   }
 
   .check-currency {
@@ -12876,7 +12877,7 @@ color: #000000;
 
   .swap-form-icon {
     background: #ffffff;
-    border: 2px solid #00A7DC;
+    border: 2px solid #003B43;
     border-radius: 20px;
   }
 
@@ -13089,15 +13090,15 @@ color: #000000;
     color: #000000;
   }
 
-  .recive-bank a {
-    background: linear-gradient(90deg, #003B43 0%, #003B43 100%);
+.recive-bank a {
+    background: #003B43;
     color: #ffffff;
     border-radius: 8px;
     font-weight: 600;
     font-size: 18px;
     line-height: 34px;
-    border : 2px solid #003B43;
-  }
+    border: 2px solid #003B43;
+}
 
   .recive-bank a:hover {
     background: linear-gradient(90deg, #003B43 0%,  #003B43 100%);
@@ -13107,6 +13108,24 @@ color: #000000;
     font-size: 18px;
     line-height: 34px;
   }
+.receive-bank a {
+background: #ffffff;
+color: #003B43;
+border-radius: 8px;
+font-weight: 600;
+font-size: 18px;
+line-height: 34px;
+border: 2px solid #003B43;
+}
+
+.receive-bank a:hover {
+background: linear-gradient(90deg, #003B43 0%, #003B43 100%);
+color: #FFFFFF;
+border-radius: 8px;
+font-weight: 600;
+font-size: 18px;
+line-height: 34px;
+}
 
   .infobank-list-app {
     background: #ffffff;
@@ -13136,13 +13155,14 @@ color: #000000;
     color: #ffffff;
 }
 
-  .btn-wallet-cancle {
+.btn-wallet-cancle {
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
-    background-color:#003B43;
-    color: #ffffff;
-  }
+    background-color: #ffffff;
+    color: #003B43;
+    border-color: #003B43;
+}
 .btn-wallet-cancle:hover {
     background-color: #003B43;
     color: #ffffff;
@@ -13182,7 +13202,7 @@ color: #000000;
 
   .swap-selection select {
     background: #ffffff;
-    border: 2px solid #00A7DC;
+    border: 2px solid #003B43;
     border-radius: 20px;
 
     background-color: #fff !important;
@@ -13252,6 +13272,11 @@ color: #000000;
     border-radius: 10px !important;
 
   }
+    .freedy-accordion-button2 {
+        background-color: #ffffff;
+        border-radius: 5px !important;
+    }
+
 
   .freedy-accordion-button:not(.collapsed) {
     background-color: transparent !important;
@@ -13270,6 +13295,13 @@ color: #000000;
     line-height: 110%;
     color: #ffffff;
   }
+.box-title-accordion2 .head {
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 110%;
+    color: #003B43;
+}
 
   .box-title-accordion .small {
     font-weight: 400;
@@ -13511,7 +13543,7 @@ color: #000000;
   /* Member Receive Attention */
   .receive-attention,
   .receive-attention:hover {
-    border: 3px solid #0F4E97;
+    border: 3px solid #003B43;
     background-color: transparent;
   }
 
@@ -13833,12 +13865,12 @@ color: #000000;
   border: 1px solid #000000;
 }
 
-.navbar-app>.box-navbar-freedy.top {
-  border-top: 1px solid #0F4E97;
+.navbar-app > .box-navbar-freedy.top {
+    border-top: 1px solid #003B43;
 }
 
-.navbar-app>.box-navbar-freedy.bottom {
-  border-bottom: 1px solid #0F4E97;
+.navbar-app > .box-navbar-freedy.bottom {
+    border-bottom: 1px solid #003B43;
 }
 
 .btn-head-crypto {

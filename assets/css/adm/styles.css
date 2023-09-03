@@ -5293,7 +5293,7 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgb(88 170 255);
+  border:#003B43;
   border-radius: 0.25rem;
 }
 

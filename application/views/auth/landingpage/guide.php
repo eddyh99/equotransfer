@@ -92,8 +92,8 @@
                     <div class="accordion" id="accordionFreedy">
                         <div class="accordion-item freedy-accordion-item mb-5">
                             <h2 class="accordion-header m-0" id="pageOne">
-                                <button id="btnaccorionOne" class="accordion-button freedy-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    <div class="box-title-accordion ms-auto text-center">
+                                <button id="btnaccorionOne" class="accordion-button freedy-accordion-button2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <div class="box-title-accordion2 ms-auto text-center">
                                         <span class="head text-blue-freedy f-hahmlet py-3">How to Topup your wallet and receive funds</span>
                                     </div>
                                 </button>
@@ -106,8 +106,8 @@
                         </div>
                         <div class="accordion-item freedy-accordion-item mb-5">
                             <h2 class="accordion-header m-0" id="pageTwo">
-                                <button id="btnaccorionTwo" class="accordion-button freedy-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <div class="box-title-accordion ms-auto text-center">
+                                <button id="btnaccorionTwo" class="accordion-button freedy-accordion-button2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="box-title-accordion2 ms-auto text-center">
                                         <span class="head text-blue-freedy f-hahmlet py-3">How to make a wallet to wallet transfer</span>
                                     </div>
                                 </button>
@@ -120,8 +120,8 @@
                         </div>
                         <div class="accordion-item freedy-accordion-item mb-5">
                             <h2 class="accordion-header m-0" id="pageThree">
-                                <button id="btnaccorionThree" class="accordion-button freedy-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <div class="box-title-accordion ms-auto text-center">
+                                <button id="btnaccorionThree" class="accordion-button freedy-accordion-button2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <div class="box-title-accordion2 ms-auto text-center">
                                         <span class="head text-blue-freedy f-hahmlet py-3">How to convert currencies </span>
                                     </div>
                                 </button>
@@ -134,8 +134,8 @@
                         </div>
                         <div class="accordion-item freedy-accordion-item mb-5">
                             <h2 class="accordion-header m-0" id="pageFour">
-                                <button id="btnaccorionFour" class="accordion-button freedy-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <div class="box-title-accordion ms-auto text-center">
+                                <button id="btnaccorionFour" class="accordion-button freedy-accordion-button2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <div class="box-title-accordion2 ms-auto text-center">
                                         <span class="head text-blue-freedy f-hahmlet py-3">How to withdraw funds and make bank transfers</span>
                                     </div>
                                 </button>
@@ -631,7 +631,7 @@
                                 In this way your company will be easily accessible and traceable by all users who use
                                 <span translate="no"> EquoTransfer </span> for daily payments.
                             </p>
-                            <h6 class="fw-bolder f-hahmlet mt-5 " style="color: #0066FF;">
+                            <h6 class="fw-bolder f-hahmlet mt-5 " style="color: #003B43;">
                                 START TO APPLY NOW FOR FIND ME SERVICE
                             </h6>
                             <form id="form-input-unique-code" action="<?=base_url()?>link/getref" method="post" class="w-100 my-3">
@@ -702,7 +702,7 @@
                         <path d="M8.67676 25.5377L13.5111 20.7034L15.927 23.1194L11.0927 27.9537L8.67676 25.5377Z" fill="#B6A4C1"/>
                         <path d="M8.68164 8.62927L11.0976 6.21332L15.9319 11.0476L13.516 13.4636L8.68164 8.62927Z" fill="#B6A4C1"/>
                         <path d="M113.532 52.7639C110.707 52.7639 108.407 50.4645 108.407 47.6389C108.407 44.8133 110.707 42.5139 113.532 42.5139C116.358 42.5139 118.657 44.8133 118.657 47.6389C118.657 50.4645 116.358 52.7639 113.532 52.7639ZM113.532 45.9306C112.593 45.9306 111.824 46.6959 111.824 47.6389C111.824 48.5819 112.593 49.3472 113.532 49.3472C114.472 49.3472 115.241 48.5819 115.241 47.6389C115.241 46.6959 114.472 45.9306 113.532 45.9306Z" fill="#B6A4C1"/>
-                        <path d="M96.5208 38.4375H26.4792C24.5932 38.4375 23.0625 36.9068 23.0625 35.0208V26.4792C23.0625 24.5932 24.5932 23.0625 26.4792 23.0625H96.5208C98.4068 23.0625 99.9375 24.5932 99.9375 26.4792V35.0208C99.9375 36.9068 98.4068 38.4375 96.5208 38.4375Z" fill="#003B43"/>
+                        <path d="M96.5208 38.4375H26.4792C24.5932 38.4375 23.e68 23.0625 35.0208V26.4792C23.0625 24.5932 24.5932 23.0625 26.4792 23.0625H96.5208C98.4068 23.0625 99.9375 24.5932 99.9375 26.4792V35.0208C99.9375 36.9068 98.4068 38.4375 96.5208 38.4375Z" fill="#003B43"/>
                         <path d="M92.25 69.1875C88.0031 69.1875 84.5625 65.7469 84.5625 61.5C84.5625 57.2531 88.0031 53.8125 92.25 53.8125C96.4969 53.8125 99.9375 57.2531 99.9375 61.5C99.9375 65.7469 96.4969 69.1875 92.25 69.1875Z" fill="#003B43"/>
                         <path d="M92.25 99.9375C88.0031 99.9375 84.5625 96.4969 84.5625 92.25C84.5625 88.0031 88.0031 84.5625 92.25 84.5625C96.4969 84.5625 99.9375 88.0031 99.9375 92.25C99.9375 96.4969 96.4969 99.9375 92.25 99.9375Z" fill="#003B43"/>
                         <path d="M30.75 35.0208V26.4792C30.75 24.5932 32.2807 23.0625 34.1667 23.0625H26.4792C24.5932 23.0625 23.0625 24.5932 23.0625 26.4792V35.0208C23.0625 36.9068 24.5932 38.4375 26.4792 38.4375H34.1667C32.2807 38.4375 30.75 36.9068 30.75 35.0208Z" fill="#D5DBE1"/>
