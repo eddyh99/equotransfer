@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\application",
-    "\\assets\\css",
-    "\\assets\\css\\adm"
+    "\\application\\views",
+    "\\application\\views\\auth",
+    "\\application\\views\\auth\\landingpage"
   ],
+  "SelectedNode": "\\application\\views\\auth\\landingpage\\guide.php",
   "PreviewInSolutionExplorer": false
 }
