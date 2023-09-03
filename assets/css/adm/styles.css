@@ -12901,11 +12901,11 @@ body {
     color: #ffffff;
 }
 
-.btn-freedy-green:hover {
-    background: linear-gradient(263deg, #003B43 0%, #578187 50%, #336c74 100%);
-    border: 1px solid #0F4E97;
-    color: #ffffff;
-}
+    .btn-freedy-green:hover {
+        background: linear-gradient(263deg, #003B43 0%, #578187 50%, #336c74 100%);
+        border: 1px solid #0F4E97;
+        color: #ffffff;
+    }
 .btn-freedy-blue {
   background: linear-gradient(263deg, #319CFF 0%, #AED8FF 50%, #0B86F8 100%);
   border-radius: 9999px;

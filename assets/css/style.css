@@ -11544,7 +11544,7 @@ color: #000000;
     font-size: 30px;
     line-height: 177.9%;
 
-    color: #CB0000;
+    color: #003B43;
   }
 
   .content-freedy p {
@@ -13945,6 +13945,7 @@ color: #000000;
   display: flex;
   flex-direction: column;
   width: 220px;
+
 }
 
 .in-crypto span {
@@ -13956,34 +13957,35 @@ color: #000000;
   color: #000000;
 }
 
-.in-crypto .box-crypto {
-  background: linear-gradient(88.92deg, #319CFF 0.54%, #B7DCFF 47.28%, #0B86F8 96.97%);
-  border: 1px solid #0F4E97;
-  border-radius: 10px;
-  padding: 1rem;
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-}
+    .in-crypto .box-crypto {
+        background: linear-gradient(88.92deg, #003B43 0.54%, #578187 47.00%, #336c74 90.00%);
+        border: 1px solid #0F4E97;
+        border-radius: 10px;
+        padding: 1rem;
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+    }
 
 .in-crypto .box-crypto p {
   font-weight: 700;
   line-height: 23px;
   text-align: center;
 
-  color: #000000;
+  color: #dde4f1;
 }
 
 .box-p-crypto {
-  background: linear-gradient(97.98deg, #319CFF 8.71%, #AED8FF 42.93%, #0B86F8 122.46%);
-  border: 1px solid #0F4E97;
-  padding: 1rem;
-  margin: 2rem 0;
-  display: inline-block;
-  border-radius: 5px;
+    background: linear-gradient(97.98deg, #003B43 8.71%, #578187 42.93%, #336c74 122.46%);
+    border: 1px solid #0F4E97;
+    padding: 1rem;
+    margin: 2rem 0;
+    display: inline-block;
+    border-radius: 5px;
 }
 
 .box-p-crypto p {
   margin: 0;
   font-weight: 500;
+  color: #dde4f1;
 }
