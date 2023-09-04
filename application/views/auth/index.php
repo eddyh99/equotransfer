@@ -2,7 +2,7 @@
 <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         <a class="logo d-flex align-items-center">
-            <img class="img-fluid" src="<?= base_url() ?>assets/img/logo.png" alt="mylogo">
+            <img class="img-fluid" src="<?= base_url() ?>assets/img/logo2.png" alt="mylogo">
         </a>
         <div class="navbar">
             <ul class="">
@@ -538,7 +538,7 @@
         <div class="row d-flex align-items-center gy-4">
             <div class="col-lg-3 col-12 my-5 pe-2 footer-links d-flex align-items-start justify-content-center">
                 <a href="<?= base_url() ?>" class="text-decoration-none">
-                    <img src="<?= base_url() ?>assets/img/logo.png" alt="mylogo" class="logo">
+                    <img src="<?= base_url() ?>assets/img/logo2.png" alt="mylogo" class="logo">
                 </a>
             </div>
             <div class="col-lg-5 col-12 pe-2 my-5 footer-links text-center">
