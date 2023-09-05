@@ -48,7 +48,7 @@
                                         </defs>
                                     </svg>
                                     <h5 class="card-title mb-3 text-blue-freedy f-hahmlet fw-bold  py-2">Open your account</h5>
-                                    <p class="card-text fw-semibold">
+                                    <p class="card-text-black">
                                         Simple and fast opening without documents and KYC request
                                     </p>
                                 </div>
@@ -69,7 +69,7 @@
                                         </defs>
                                     </svg>
                                     <h5 class="card-title mb-3 text-blue-freedy f-hahmlet fw-bold py-2">Top up your wallet</h5>
-                                    <p class="card-text fw-semibold">
+                                    <p class="card-text-black">
                                         Top up, through a bank transfer, your  <span translate="no"> LibertyBank </span> wallet with your favorite FIAT currency and than convert any amount into USDX to start to trading
                                     </p>
                                 </div>
@@ -90,7 +90,7 @@
                                         </defs>
                                     </svg>
                                     <h5 class="card-title mb-3 text-blue-freedy f-hahmlet fw-bold py-2">Start buying and selling</h5>
-                                    <p class="card-text fw-semibold">
+                                    <p class="card-text-black">
                                         You are ready to buy and sell Crypto Currencies, placing limit orders, in an
                                         anonymous way
                                     </p>
@@ -112,7 +112,7 @@
                                         </defs>
                                     </svg>
                                     <h5 class="card-title mb-3 text-blue-freedy f-hahmlet fw-bold py-2">Withdraw your earning</h5>
-                                    <p class="card-text fw-semibold">
+                                    <p class="card-text-black">
                                         You will be able to withdraw, anonymously, your FIAT earnings to
                                         any bank account  even if are not registered under you name
                                     </p>
