@@ -10,7 +10,7 @@
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M23.625 13.375L13.375 23.625M13.375 13.375L23.625 23.625M35.5833 18.5C35.5833 27.9349 27.9349 35.5833 18.5 35.5833C9.06512 35.5833 1.41666 27.9349 1.41666 18.5C1.41666 9.06513 9.06512 1.41666 18.5 1.41666C27.9349 1.41666 35.5833 9.06513 35.5833 18.5Z"
-                                        stroke="#0F4E97" stroke-width="2" stroke-linecap="round"
+                                        stroke="#1A4F56" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
                             </a>

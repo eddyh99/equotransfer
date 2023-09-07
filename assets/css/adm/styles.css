@@ -12561,7 +12561,7 @@ body {
 }
 
 .sb-topnav.navbar-dark #sidebarToggle {
-  color: #0F4E97;
+  color: #003B43;
 }
 
 .sb-topnav.navbar-light #sidebarToggle {
@@ -12646,15 +12646,16 @@ body {
 }
 
 .sb-sidenav-dark .sb-sidenav-menu .nav-link:hover {
-  color: #0F4E97;
+  color: #003B43;
 }
 
 .sb-sidenav-dark .sb-sidenav-menu .nav-link.active {
-  color: #0F4E97;
+  color: #003B43;
+  font-weight: 700;
 }
 
 .sb-sidenav-dark .sb-sidenav-menu .nav-link.active .sb-nav-link-icon {
-  color: #0066FF;
+  color: #003B43;
 }
 
 .sb-sidenav-dark .sb-sidenav-footer {
@@ -13035,7 +13036,7 @@ body {
 
 .infowallet-list-app {
   background: #ffffff;
-  border: 1px solid #00A7DC;
+  border: 1px solid #003B43;
   border-radius: 5px;
 }
 

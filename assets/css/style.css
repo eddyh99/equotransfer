@@ -3777,8 +3777,8 @@ color: #000000;
 }
 
 .attention-box {
-  background: linear-gradient(180deg, #0066ff 0%, #0F4E97 100%);
-  border: 3px solid #0F4E97;
+  background: linear-gradient(180deg, #FFEAA2 0%, #FFEAA2 100%);
+  border: 3px solid #000000;
   border-radius: 10px;
 }
 
@@ -3786,15 +3786,14 @@ color: #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 110%;
-  color: #ffffff;
+  color: #000000;
 }
 
 .attention-box p {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-
-  color: #e1e1e1;
+  color: #000000;
 }
 
 .navbar .btn-login,
@@ -4322,8 +4321,7 @@ color: #000000;
   }
 
   .bg-login {
-    background: url(../img/bg-login.png);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(0 78 75);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -4332,8 +4330,7 @@ color: #000000;
   }
 
   .bg-signin {
-    background: url(../img/bg-signin.png);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(0 78 75);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -4735,7 +4732,7 @@ color: #000000;
   .menus-list-app a.menus-blue {
     background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right, #0F4E97, #228fb1, #00A7DC) border-box;
-    border: 1px solid transparent;
+    border: 1px solid #003B43;
     border-radius: 20px;
     color: #000000;
     font-weight: 500;
@@ -5104,7 +5101,7 @@ color: #000000;
 
   .currency-next-btn {
     display: inline-block;
-    background: #D2E4F5;
+    background: #02e8a2;
     border-radius: 6px;
     font-weight: 500;
     font-size: 14px;
@@ -5594,24 +5591,21 @@ color: #000000;
     font-size: 18px;
     line-height: 34px;
     }
-.btn-wallet-cancle {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    background-color: #ffffff;
-    color: #003B43;
-    border-color: #003B43;
-}
-.btn-wallet-cancle:hover {
-    background-color: #003B43;
-    color: #ffffff;
-}
+
+  .btn-wallet-cancle {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      background-color: #ffffff;
+      color: #003B43;
+  }
+
 
   .b-qr {
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-    background: linear-gradient(263.23deg, #0F4E97 6.67%, #00A7DC 70.3%);
+    background: linear-gradient(263.23deg, #1A4F56 6.67%, #1A4F56 70.3%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -6819,8 +6813,7 @@ color: #000000;
   }
 
   .bg-login {
-    background: url(../img/bg-login.png);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(0 78 75);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -6829,8 +6822,7 @@ color: #000000;
   }
 
   .bg-signin {
-    background: url(../img/bg-signin.png);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(0 78 75);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -7225,7 +7217,7 @@ color: #000000;
   .menus-list-app a.menus-blue {
     background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right, #0F4E97, #228fb1, #00A7DC) border-box;
-    border: 1px solid transparent;
+    border: 1px solid #003B43;
     color: #000000;
     border-radius: 20px;
     font-weight: 500;
@@ -7594,7 +7586,7 @@ color: #000000;
 
   .currency-next-btn {
     display: inline-block;
-    background: #D2E4F5;
+    background: #02e8a2;
     border-radius: 6px;
     font-weight: 500;
     font-size: 14px;
@@ -8085,24 +8077,20 @@ color: #000000;
     font-size: 18px;
     line-height: 34px;
     }
-.btn-wallet-cancle {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    background-color: #ffffff;
-    color: #003B43;
-    border-color: #003B43;
-}
-.btn-wallet-cancle:hover {
-    background-color: #003B43;
-    color: #ffffff;
-}
+
+  .btn-wallet-cancle {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      background-color: #ffffff;
+      color: #003B43;
+  }
 
   .b-qr {
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-    background: linear-gradient(263.23deg, #0F4E97 6.67%, #00A7DC 70.3%);
+    background: linear-gradient(263.23deg, #1A4F56 6.67%, #1A4F56 70.3%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -9259,8 +9247,7 @@ color: #000000;
   }
 
   .bg-login {
-    background: url(../img/bg-login.png);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(0 78 75);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -9269,8 +9256,7 @@ color: #000000;
   }
 
   .bg-signin {
-    background: url(../img/bg-signin.png);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(0 78 75);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -10020,7 +10006,7 @@ color: #000000;
 
   .currency-next-btn {
     display: inline-block;
-    background: #D2E4F5;
+    background: #02e8a2;
     border-radius: 6px;
     font-weight: 500;
     font-size: 14px;
@@ -10512,24 +10498,20 @@ color: #000000;
     font-size: 18px;
     line-height: 34px;
     }
-.btn-wallet-cancle {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    background-color: #ffffff;
-    color: #003B43;
-    border-color: #003B43;
-}
-.btn-wallet-cancle:hover {
-    background-color: #003B43;
-    color: #ffffff;
-}
+
+  .btn-wallet-cancle {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      background-color: #ffffff;
+      color: #003B43;
+  }
 
   .b-qr {
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-    background: linear-gradient(263.23deg, #0F4E97 6.67%, #00A7DC 70.3%);
+    background: linear-gradient(263.23deg, #1A4F56 6.67%, #1A4F56 70.3%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -11314,8 +11296,7 @@ color: #000000;
   }
 
   .bg-login {
-    background: url(../img/bg-login.png);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(0 78 75);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -11324,8 +11305,7 @@ color: #000000;
   }
 
   .bg-signin {
-    background: url(../img/bg-signin.png);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(0 78 75);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -12162,8 +12142,7 @@ color: #000000;
   }
 
   .bg-login {
-    background: url(../img/bg-login.png);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(0 78 75);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -12172,8 +12151,7 @@ color: #000000;
   }
 
   .bg-signin{
-    background: url(../img/bg-signin.png);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(0 78 75);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -12942,7 +12920,7 @@ color: #000000;
 
   .currency-next-btn {
     display: inline-block;
-    background: #D2E4F5;
+    background: #02e8a2;
     border-radius: 6px;
     font-weight: 500;
     font-size: 14px;
@@ -13434,10 +13412,12 @@ color: #000000;
     background-color: #003B43;
     color: #ffffff;
   }
+
 .btn-search {
     background-color: #003B43;
     color: #ffffff;
  }
+
 .btn-search:hover {
     background-color: #003B43;
     color: #ffffff;
@@ -13449,18 +13429,14 @@ color: #000000;
     line-height: 18px;
     background-color: #ffffff;
     color: #003B43;
-    border-color: #003B43;
 }
-.btn-wallet-cancle:hover {
-    background-color: #003B43;
-    color: #ffffff;
-}
+
 
   .b-qr {
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
-    background: linear-gradient(263.23deg, #0F4E97 6.67%, #00A7DC 70.3%);
+    background: linear-gradient(263.23deg, #1A4F56 6.67%, #1A4F56 70.3%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -14125,7 +14101,7 @@ color: #000000;
 .input-piggy-style input,
 .input-piggy-style input:focus,
 .input-piggy-style input:hover {
-  border: 1px solid #0F4E97;
+  border: 1px solid rgba(0, 59, 67, 0.90);
   background: #FFFFFF !important;
   border-radius: 10px !important;
   color: #000000 !important;
@@ -14137,7 +14113,7 @@ color: #000000;
 
 .input-piggy-style label {
   font-weight: 700;
-  background: linear-gradient(263.23deg, #0F4E97 6.67%, #000000 70.3%);
+  background: linear-gradient(263.23deg, #003B43 6.67%, #000000 70.3%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

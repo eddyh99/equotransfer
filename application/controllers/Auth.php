@@ -237,6 +237,7 @@ class Auth extends CI_Controller
 
 		$url = URLAPI . "/v1/auth/signin";
 		$result = apitrackless($url, json_encode($mdata));
+		
 		if (@$result->code != 200) {
 			$this->session->set_flashdata('failed', $result->message);
 			redirect(base_url() . "auth/login");
@@ -500,7 +501,6 @@ class Auth extends CI_Controller
 
 		$banks = URLAPI . "/v1/member/wallet/getAllbank";
 		$symbol = URLAPI . "/v1/trackless/currency/getsymbol?currency=" . base64_decode($curr);
-
 
 		if ($amount) {
 			$data['urlamount'] = "&amount=" . base64_decode($amount);

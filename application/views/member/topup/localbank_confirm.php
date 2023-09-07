@@ -31,7 +31,7 @@
                                     <input type="text" class="form-control mb-4" name="amount" id="amount" placeholder="Amount" value="<?= $data["amount"] ?>" hidden>
                                 </div>
                                 <div class="col-12 d-flex flex-row mt-5">
-                                    <a href="<?= base_url() ?>receive/localbank" class="btn btn-wallet-cancle py-2 me-auto">Cancel</a>
+                                    <a href="<?= base_url() ?>receive/localbank" class="btn btn-wallet-cancle me-auto">Cancel</a>
                                     <button class="btn btn-confirm" type="submit" id="btnconfirm">Confirm</button>
                                 </div>
                             </form>
