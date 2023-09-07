@@ -90,7 +90,7 @@
                 </div>
                 <div class="col-12 mt-3">
                     <div class="accordion" id="accordionFreedy">
-                        <div class="accordion-item freedy-accordion-item mb-5">
+                        <div class="accordion-item freedy-accordion-item-reward mb-5">
                             <h2 class="accordion-header m-0" id="pageOne">
                                 <button id="btnaccorionOne" class="accordion-button freedy-accordion-button2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     <div class="box-title-accordion2 ms-auto text-center">
@@ -104,7 +104,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item freedy-accordion-item mb-5">
+                        <div class="accordion-item freedy-accordion-item-reward mb-5">
                             <h2 class="accordion-header m-0" id="pageTwo">
                                 <button id="btnaccorionTwo" class="accordion-button freedy-accordion-button2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <div class="box-title-accordion2 ms-auto text-center">
@@ -118,7 +118,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item freedy-accordion-item mb-5">
+                        <div class="accordion-item freedy-accordion-item-reward mb-5">
                             <h2 class="accordion-header m-0" id="pageThree">
                                 <button id="btnaccorionThree" class="accordion-button freedy-accordion-button2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     <div class="box-title-accordion2 ms-auto text-center">
@@ -132,7 +132,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item freedy-accordion-item mb-5">
+                        <div class="accordion-item freedy-accordion-item-reward mb-5">
                             <h2 class="accordion-header m-0" id="pageFour">
                                 <button id="btnaccorionFour" class="accordion-button freedy-accordion-button2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     <div class="box-title-accordion2 ms-auto text-center">
@@ -156,14 +156,13 @@
                 <div class="col-12 my-5">
                     <div class="logo-text text-center features-text">
                         <svg width="142" height="129" viewBox="0 0 142 129" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M127.394 24.8141C127.394 53.0119 142 72.3757 142 85.963C142 99.5503 134.189 128.086 71.6828 128.086C9.17641 128.086 0 89.6971 0 74.7523C0 4.76945 127.394 -25.1242 127.394 24.8141Z" fill="#EFEFEF"/>
-                        <path d="M111.829 16.8963C108.457 16.8963 105.714 14.1527 105.714 10.7814C105.714 7.41005 108.457 4.6665 111.829 4.6665C115.2 4.6665 117.944 7.41005 117.944 10.7814C117.944 14.1527 115.2 16.8963 111.829 16.8963ZM111.829 8.7431C110.708 8.7431 109.79 9.65625 109.79 10.7814C109.79 11.9065 110.708 12.8197 111.829 12.8197C112.95 12.8197 113.867 11.9065 113.867 10.7814C113.867 9.65625 112.95 8.7431 111.829 8.7431Z" fill="#003B43"/>
-                        <path d="M124.059 93.3619C120.688 93.3619 117.944 90.6183 117.944 87.247C117.944 83.8756 120.688 81.1321 124.059 81.1321C127.431 81.1321 130.174 83.8756 130.174 87.247C130.174 90.6183 127.431 93.3619 124.059 93.3619ZM124.059 85.2087C122.938 85.2087 122.021 86.1218 122.021 87.247C122.021 88.3721 122.938 89.2853 124.059 89.2853C125.18 89.2853 126.098 88.3721 126.098 87.247C126.098 86.1218 125.18 85.2087 124.059 85.2087Z" fill="#003B43"/>
-                        <path d="M72.6446 25.0708C64.7303 25.0708 57.1403 28.2147 51.544 33.8109C45.9478 39.4071 42.8039 46.9972 42.8039 54.9115C42.8039 69.9437 53.9942 82.5887 68.9145 84.491V88.4822H65.1844C64.1951 88.4822 63.2464 88.8752 62.5469 89.5747C61.8473 90.2743 61.4543 91.223 61.4543 92.2123H35.3438V99.6725H61.4543C61.4543 100.662 61.8473 101.611 62.5469 102.31C63.2464 103.01 64.1951 103.403 65.1844 103.403H80.1048C81.094 103.403 82.0428 103.01 82.7423 102.31C83.4418 101.611 83.8348 100.662 83.8348 99.6725H109.945V92.2123H83.8348C83.8348 91.223 83.4418 90.2743 82.7423 89.5747C82.0428 88.8752 81.094 88.4822 80.1048 88.4822H76.3747V84.491C91.295 82.626 102.485 69.9437 102.485 54.9115C102.485 46.9972 99.3413 39.4071 93.7451 33.8109C88.1489 28.2147 80.5588 25.0708 72.6446 25.0708ZM72.6446 32.531C72.6446 32.531 75.4048 37.3055 77.3445 43.7212H67.9447C69.8843 37.3055 72.6446 32.531 72.6446 32.531ZM64.3265 34.1349C63.3194 35.9999 61.79 39.3943 60.4845 43.7212H53.2855C55.8592 39.3943 59.5893 35.9999 64.3265 34.1349ZM80.9627 34.1722C85.6999 36.0372 89.43 39.3943 92.0037 43.7212H84.8047C83.4991 39.3943 81.9698 35.9999 80.9627 34.1722ZM50.5998 51.1814H58.9179C58.7687 52.4123 58.6568 53.6432 58.6568 54.9115C58.6568 56.1797 58.7687 57.4106 58.9179 58.6416H50.5998C50.376 57.4106 50.2641 56.1797 50.2641 54.9115C50.2641 53.6432 50.376 52.4123 50.5998 51.1814ZM66.378 51.1814H78.9111C79.0603 52.4123 79.1722 53.6432 79.1722 54.9115C79.1722 56.1797 79.0603 57.4106 78.9111 58.6416H66.378C66.2288 57.4106 66.1169 56.1797 66.1169 54.9115C66.1169 53.6432 66.2288 52.4123 66.378 51.1814ZM86.3713 51.1814H94.6894C94.9132 52.4123 95.0251 53.6432 95.0251 54.9115C95.0251 56.1797 94.9132 57.4106 94.6894 58.6416H86.3713C86.5205 57.4106 86.6324 56.1797 86.6324 54.9115C86.6324 53.6432 86.5205 52.4123 86.3713 51.1814ZM53.2855 66.1017H60.4845C61.79 70.4286 63.3194 73.823 64.3265 75.6507C59.5893 73.7857 55.8592 70.4286 53.2855 66.1017ZM67.9447 66.1017H77.3445C75.4048 72.5175 72.6446 77.292 72.6446 77.292C72.6446 77.292 69.8843 72.5175 67.9447 66.1017ZM84.8047 66.1017H92.0037C89.43 70.4286 85.6999 73.823 80.9627 75.688C81.9698 73.823 84.8047 66.1017 84.8047 66.1017Z" fill="#003B43"/>
-                        <rect x="34.3945" y="90.856" width="76.5006" height="9.76604" fill="black"/>
-                        <rect x="60.4375" y="87.6006" width="24.4151" height="16.2767" rx="2" fill="#0A0A0A"/>
+                            <path d="M127.394 24.8141C127.394 53.0119 142 72.3757 142 85.963C142 99.5503 134.189 128.086 71.6828 128.086C9.17641 128.086 0 89.6971 0 74.7523C0 4.76945 127.394 -25.1242 127.394 24.8141Z" fill="#EFEFEF"/>
+                            <path d="M111.829 16.8963C108.457 16.8963 105.714 14.1527 105.714 10.7814C105.714 7.41005 108.457 4.6665 111.829 4.6665C115.2 4.6665 117.944 7.41005 117.944 10.7814C117.944 14.1527 115.2 16.8963 111.829 16.8963ZM111.829 8.7431C110.708 8.7431 109.79 9.65625 109.79 10.7814C109.79 11.9065 110.708 12.8197 111.829 12.8197C112.95 12.8197 113.867 11.9065 113.867 10.7814C113.867 9.65625 112.95 8.7431 111.829 8.7431Z" fill="#003B43"/>
+                            <path d="M124.059 93.3619C120.688 93.3619 117.944 90.6183 117.944 87.247C117.944 83.8756 120.688 81.1321 124.059 81.1321C127.431 81.1321 130.174 83.8756 130.174 87.247C130.174 90.6183 127.431 93.3619 124.059 93.3619ZM124.059 85.2087C122.938 85.2087 122.021 86.1218 122.021 87.247C122.021 88.3721 122.938 89.2853 124.059 89.2853C125.18 89.2853 126.098 88.3721 126.098 87.247C126.098 86.1218 125.18 85.2087 124.059 85.2087Z" fill="#003B43"/>
+                            <path d="M72.6446 25.0708C64.7303 25.0708 57.1403 28.2147 51.544 33.8109C45.9478 39.4071 42.8039 46.9972 42.8039 54.9115C42.8039 69.9437 53.9942 82.5887 68.9145 84.491V88.4822H65.1844C64.1951 88.4822 63.2464 88.8752 62.5469 89.5747C61.8473 90.2743 61.4543 91.223 61.4543 92.2123H35.3438V99.6725H61.4543C61.4543 100.662 61.8473 101.611 62.5469 102.31C63.2464 103.01 64.1951 103.403 65.1844 103.403H80.1048C81.094 103.403 82.0428 103.01 82.7423 102.31C83.4418 101.611 83.8348 100.662 83.8348 99.6725H109.945V92.2123H83.8348C83.8348 91.223 83.4418 90.2743 82.7423 89.5747C82.0428 88.8752 81.094 88.4822 80.1048 88.4822H76.3747V84.491C91.295 82.626 102.485 69.9437 102.485 54.9115C102.485 46.9972 99.3413 39.4071 93.7451 33.8109C88.1489 28.2147 80.5588 25.0708 72.6446 25.0708ZM72.6446 32.531C72.6446 32.531 75.4048 37.3055 77.3445 43.7212H67.9447C69.8843 37.3055 72.6446 32.531 72.6446 32.531ZM64.3265 34.1349C63.3194 35.9999 61.79 39.3943 60.4845 43.7212H53.2855C55.8592 39.3943 59.5893 35.9999 64.3265 34.1349ZM80.9627 34.1722C85.6999 36.0372 89.43 39.3943 92.0037 43.7212H84.8047C83.4991 39.3943 81.9698 35.9999 80.9627 34.1722ZM50.5998 51.1814H58.9179C58.7687 52.4123 58.6568 53.6432 58.6568 54.9115C58.6568 56.1797 58.7687 57.4106 58.9179 58.6416H50.5998C50.376 57.4106 50.2641 56.1797 50.2641 54.9115C50.2641 53.6432 50.376 52.4123 50.5998 51.1814ZM66.378 51.1814H78.9111C79.0603 52.4123 79.1722 53.6432 79.1722 54.9115C79.1722 56.1797 79.0603 57.4106 78.9111 58.6416H66.378C66.2288 57.4106 66.1169 56.1797 66.1169 54.9115C66.1169 53.6432 66.2288 52.4123 66.378 51.1814ZM86.3713 51.1814H94.6894C94.9132 52.4123 95.0251 53.6432 95.0251 54.9115C95.0251 56.1797 94.9132 57.4106 94.6894 58.6416H86.3713C86.5205 57.4106 86.6324 56.1797 86.6324 54.9115C86.6324 53.6432 86.5205 52.4123 86.3713 51.1814ZM53.2855 66.1017H60.4845C61.79 70.4286 63.3194 73.823 64.3265 75.6507C59.5893 73.7857 55.8592 70.4286 53.2855 66.1017ZM67.9447 66.1017H77.3445C75.4048 72.5175 72.6446 77.292 72.6446 77.292C72.6446 77.292 69.8843 72.5175 67.9447 66.1017ZM84.8047 66.1017H92.0037C89.43 70.4286 85.6999 73.823 80.9627 75.688C81.9698 73.823 84.8047 66.1017 84.8047 66.1017Z" fill="#003B43"/>
+                            <rect x="34.3945" y="90.856" width="76.5006" height="9.76604" fill="black"/>
+                            <rect x="60.4375" y="87.6006" width="24.4151" height="16.2767" rx="2" fill="#0A0A0A"/>
                         </svg>
-
                         <span class="fw-bolder title-top-header text-blue-freedy f-hahmlet">Capital Exportation</span>
                     </div>
                 </div>
@@ -214,7 +213,7 @@
                     <div class="col-12 text-center mb-5 features-text">
                         <h3 class="text-dark f-hahmlet fw-bold">How we make this service possible?</h3>
                         <div class="col-12 col-md-8 mx-auto my-4">
-                            <img src="<?= base_url() ?>assets/img/img-13.svg" alt="logo" class="img-fluid">
+                            <img src="<?= base_url() ?>assets/img/img-13.png" alt="img" class="img-fluid">
                         </div>
                         <p class="col-12 col-lg-9 mx-auto f-jakarta">
                             <span translate="no"> EquoTransfer, </span> making use of the licensee company's capitals, partners and offices, in order to respect the laws in force on the matter, will not carry out an international transfer but will send a national transfer from the current account of the country of destination to the current account required by the sender, in the same country, carrying out an internal clearing only afterwards (the internal clearing procedure is 100% legal).
@@ -444,14 +443,14 @@
                             <div class="box-crypto">
                                 <p class="mb-3">Log in to your <b class="fw-semibold" translate="no"> EquoTransfer </b> wallet and select
                                     crypto</p>
-                                <img class="my-auto img-fluid" src="<?= base_url() ?>assets/img/crypto-1.svg" alt="crypto-1">
+                                <img class="my-auto img-fluid" src="<?= base_url() ?>assets/img/crypto-1.png" alt="crypto-1">
                             </div>
                         </div>
                         <div class="in-crypto">
                             <span>Step 2</span>
                             <div class="box-crypto">
                                 <p class="mb-3">Click top up <br> button</p>
-                                <img class="my-auto img-fluid" src="<?= base_url() ?>assets/img/crypto-2.svg" alt="">
+                                <img class="my-auto img-fluid" src="<?= base_url() ?>assets/img/crypto-2.png" alt="">
                             </div>
                         </div>
                         <div class="in-crypto">
@@ -502,7 +501,7 @@
                             <span>Step 1</span>
                             <div class="box-crypto">
                                 <p class="mb-3">From your wallet, in crypto section, click the button withdraw</p>
-                                <img class="my-auto img-fluid" src="<?= base_url() ?>assets/img/crypto-3.svg" alt="icon">
+                                <img class="my-auto img-fluid" src="<?= base_url() ?>assets/img/crypto-3.png" alt="icon">
                             </div>
                         </div>
                         <div class="in-crypto">
@@ -537,7 +536,7 @@
                 </div>
 
                 <div class="col-12 text-center fw-bold">
-                    <h3>Coming soon</h3>
+                    <h3 class="fw-bold">Coming soon</h3>
                 </div>
             <?php } ?>
             <!-- End Buy & Sell FIAT Currencies -->

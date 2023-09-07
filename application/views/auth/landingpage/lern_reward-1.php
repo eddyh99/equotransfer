@@ -5,7 +5,7 @@
                 <div class="box-service-list box-tell d-flex flex-row">
                     <div class="text-content d-flex flex-column">
                         <div class="top d-flex flex-row">
-                            <span class="number text-blue-freedy">01.</span>
+                            <span class="number text-green-equo">01.</span>
                             <span class="title">Open your account</span>
                         </div>
                         <div class="bot">
@@ -13,7 +13,7 @@
                         </div>
                     </div>
                     <div class="icon">
-                        <img src="<?=base_url()?>assets/img/icon-service-1.svg" alt="icon">
+                        <img src="<?=base_url()?>assets/img/icon-service-1.png" alt="icon">
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 <div class="box-service-list box-tell d-flex flex-row">
                     <div class="text-content d-flex flex-column">
                         <div class="top d-flex flex-row">
-                            <span class="number text-blue-freedy">02.</span>
+                            <span class="number text-green-equo">02.</span>
                             <span class="title">Get your personal
                                 link</span>
                         </div>
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="icon">
-                        <img src="<?=base_url()?>assets/img/icon-service-2.svg" alt="icon">
+                        <img src="<?=base_url()?>assets/img/icon-service-2.png" alt="icon">
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                 <div class="box-service-list box-tell d-flex flex-row">
                     <div class="text-content d-flex flex-column">
                         <div class="top d-flex flex-row">
-                            <span class="number text-blue-freedy">03.</span>
+                            <span class="number text-green-equo">03.</span>
                             <span class="title">Invite people</span>
                         </div>
                         <div class="bot">
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="icon">
-                        <img src="<?=base_url()?>assets/img/icon-service-3.svg" alt="icon">
+                        <img src="<?=base_url()?>assets/img/icon-service-3.png" alt="icon">
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                 <div class="box-service-list box-tell d-flex flex-row">
                     <div class="text-content d-flex flex-column">
                         <div class="top d-flex flex-row">
-                            <span class="number text-blue-freedy">04.</span>
+                            <span class="number text-green-equo">04.</span>
                             <span class="title">Congratulation!</span>
                         </div>
                         <div class="bot">
@@ -68,14 +68,14 @@
                         </div>
                     </div>
                     <div class="icon">
-                        <img src="<?=base_url()?>assets/img/icon-service-4.svg" alt="icon">
+                        <img src="<?=base_url()?>assets/img/icon-service-4.png" alt="icon">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-12 text-center features-text">
-        <h2 class="title-top-header fw-bold f-hahmlet text-blue-freedy">Referral earning</h2>
+        <h2 class="title-top-header fw-bold f-hahmlet text-green-equo">Referral earning</h2>
         <span class="fw-bold">(Select currency to see all referral earning)</span>
         <div class="col-12 text-start mx-auto table-responsive my-5">
             <table class="table tbl-piggy-service text-center">

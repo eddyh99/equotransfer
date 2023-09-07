@@ -30,8 +30,8 @@
 
             <div class="col-12 text-center">
                 <div class="content-freedy">
-                    <div class="d-flex flex-column flex-md-row flex-wrap justify-content-between">
-                        <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
+                    <div class="d-flex flex-column flex-md-row flex-wrap justify-content-center justify-content-lg-between">
+                        <div class="col-12 col-md-6 col-lg-4 text-center px-3 py-2">
                             <div class="card freedy-card multibtop text-center">
                                 <div class="card-body">
                                     <h5 class="card-title mb-3 f-hahmlet fw-bold  py-2 text-uppercase" style="color: #66898E;">No KYC procedure</h5>
@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
+                        <div class="col-12 col-md-6 col-lg-4 text-center px-3 py-2">
                             <div class="card freedy-card multibtop text-center">
                                 <div class="card-body">
                                     <h5 class="card-title mb-3 f-hahmlet fw-bold py-2 text-uppercase" style="color: #66898E;">No anti-money laundering procedure</h5>
@@ -52,7 +52,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
+                        <div class="col-12 col-md-6 col-lg-4 text-center px-3 py-2">
                             <div class="card freedy-card multibtop text-center">
                                 <div class="card-body">
                                     <h5 class="card-title mb-3 f-hahmlet fw-bold py-2 text-uppercase" style="color: #66898E;">anonymity of the Transactions </h5>

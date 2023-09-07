@@ -1,5 +1,5 @@
 <!-- ======= Hero Section ======= -->
-<section id="" class="hero-message d-flex align-items-center p-3 pt-md-5" style="background-color: rgba(49, 156, 255, 1);">
+<section id="" class="hero-message d-flex align-items-center p-3 pt-md-5" style="background-color: #003B43;">
     <div class="container">
         <div class="row">
             <div class="col-12">
