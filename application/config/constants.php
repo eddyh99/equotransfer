@@ -116,6 +116,7 @@ local server
 
 // define('LINKQRCODE', "/exchangetailor.com/wallet/send");
 define('NAMETITLE', "Equotransfer");
+define('NAMEBANK', "EquoTransfer");
 
 define('BANK_ID', "8");
 
