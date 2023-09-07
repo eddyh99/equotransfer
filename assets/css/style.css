@@ -831,7 +831,7 @@ color: rgba(255, 255, 255, 0.8);
 
 .guide-wallet ol li {
   margin-bottom: 10px;
-  color: white;
+  color: #000000;
 }
 
 
@@ -843,6 +843,7 @@ color: rgba(255, 255, 255, 0.8);
   background-image: url(../img/bg-guide.png) !important;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 /*--------------------------------------------------------------
@@ -1018,10 +1019,10 @@ color: rgba(255, 255, 255, 0.8);
     color: #ffffff;
 }
 
-    .btn-unique-code:hover {
-        background: #00A7DC;
-        color: #ffffff;
-    }
+.btn-unique-code:hover {
+    background: #00A7DC;
+    color: #ffffff;
+}
 
 .text-findme {
   font-size: 14px !important;
@@ -1429,10 +1430,20 @@ color: rgba(255, 255, 255, 0.8);
   left: -33px;
 }
 
+.bg-hero .position-relative .el-btc img {
+  width: 75px;
+  height: auto;
+}
+
 .bg-hero .position-relative .el-eth {
-  right: -30px;
-  top: 60px;
+  right: -19px;
+  top: 70px;
   overflow-x: hidden;
+}
+
+.bg-hero .position-relative .el-eth img {
+  width: 75px;
+  height: auto;
 }
 
 .bg-hero .position-relative .el-eur {
@@ -1441,9 +1452,19 @@ color: rgba(255, 255, 255, 0.8);
   overflow-x: hidden;
 }
 
+.bg-hero .position-relative .el-eur img {
+  width: 75px;
+  height: auto;
+}
+
 .bg-hero .position-relative .el-usd {
   bottom: 0;
   left: -7px;
+}
+
+.bg-hero .position-relative .el-usd img {
+  width: 75px;
+  height: auto;
 }
 
 .hero-institue a img{
@@ -3590,6 +3611,14 @@ color: #000000;
   background-clip: text;
 }
 
+
+.text-lightgreen-equo {
+  background: linear-gradient(263.23deg, #66898E 6.67%, #66898E 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .text-blue-freedy.linear {
   background: linear-gradient(263.23deg, #319CFF 6.67%, #B7DCFF 70.3%, #0B86F8 100%);
   -webkit-background-clip: text;
@@ -4005,7 +4034,7 @@ color: #000000;
     padding: 0.7rem 1rem;
     font-weight: 600;
     transition: 0.5s;
-    color: #000000;
+    color: #ffffff;
     background: linear-gradient(263.23deg, #FFCE00 6.67%, #FFCE00 70.3%, #FFCE00 100%);
     border-radius: 4px;
   }
@@ -4220,9 +4249,9 @@ color: #000000;
     line-height: 0;
     padding: 1.5rem 4rem;
     transition: 0.5s;
-    color: #000000;
+    color: #ffffff;
     border: 0px solid transparent;
-    background: linear-gradient(88.92deg, #319CFF 0.54%, #B7DCFF 47.28%, #0B86F8 96.97%);
+    background: linear-gradient(88.92deg, #003B43 0.54%, #003B43 47.28%, #003B43 96.97%);
     border-radius: 44px;
   }
 
@@ -4422,16 +4451,14 @@ color: #000000;
     background: transparent;
     border-radius: 0;
     color: #fff;
-
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
   }
 
   .form-login-freedy .bg-black {
-    background: #0D5FA4 !important;
+    background: #003B43  !important;
     border-radius: 10px;
-
     color: #fff;
   }
 
@@ -4492,7 +4519,7 @@ color: #000000;
   }
 
   .form-login-freedy .btn-login {
-    background: linear-gradient(180deg, #5B90F7 0%, #3E79EA 100%);
+    background: linear-gradient(180deg, #003B43 0%, #003B43 100%);
     border-radius: 5px;
     font-weight: 500;
     font-size: 12px;
@@ -5484,7 +5511,7 @@ color: #000000;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #0F4E97;
+    color: #003B43;
   }
 
   .receive-note span {
@@ -5591,10 +5618,39 @@ color: #000000;
   }
 
   .freedy-accordion-item {
-    border: 3px solid #000000 !important;
-    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
-    background-color: #004C51;
+    border: 4px solid transparent !important;
+    border-radius: 20px !important;
+    background: 
+      linear-gradient(to right, #004C51, #004C51), 
+      linear-gradient(to right, #FFE500, #FFFFFF, #FFE500) !important; 
+    background-clip: padding-box, border-box !important;
+    background-origin: padding-box, border-box !important;
+  }
+  
+  .freedy-accordion-item-reward {
+    border: 4px solid transparent !important;
+    border-radius: 20px !important;
+    background: 
+      linear-gradient(to right, white, white), 
+      linear-gradient(to right, #336268, #336268, #336268) !important; 
+    background-clip: padding-box, border-box !important;
+    background-origin: padding-box, border-box !important;
+  }
+
+  .freedy-accordion-button-reward {
+    background-color: #ffffff;
+    border-radius: 17px !important;
+  }
+
+  .freedy-accordion-button-reward:not(.collapsed) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #336268;
+  }
+
+  .freedy-accordion-button2 {
+    background-color: #ffffff !important;
+    border-radius: 17px !important;
   }
 
   .list-send-wallet span {
@@ -5702,18 +5758,35 @@ color: #000000;
     line-height: 110%;
     color: #ffffff;
   }
+
+  .box-title-accordion .head-reward {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 110%;
+    color: #336268;
+  }
+
   .box-title-accordion2 .head {
     display: block;
     font-weight: 700;
     font-size: 28px;
     line-height: 110%;
     color: #003B43;
-}
+  }
+
   .box-title-accordion .small {
     font-weight: 400;
     font-size: 12px;
     line-height: 110%;
     color: #ffffff;
+  }
+
+  .box-title-accordion .small-reward {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #336268;
   }
 
   .freedy-accordion-body p {
@@ -5733,9 +5806,9 @@ color: #000000;
   .freedy-card.multibtop {
     background: linear-gradient(#ffffff, #ffffff) padding-box,
     linear-gradient(to right, #66898E, #66898E, #66898E) border-box;
-    border-top-width: 7px;
+    border-top-width: 10px;
     border-top-style: solid;
-    border-top-color: transparent;
+    border-top-color: #66898E;
   }
     
   .multibtop {
@@ -6198,7 +6271,7 @@ color: #000000;
     line-height: 20px;
     color: #0F4E97;
     text-align: center;
-    border: 2px solid #319CFF;
+    border: 2px solid #003B43;
     border-radius: 9999px;
     padding: 0 1rem;
   }
@@ -6423,7 +6496,7 @@ color: #000000;
 
   .content-freedy h2 {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 145.69%;
 
   }
@@ -6459,7 +6532,7 @@ color: #000000;
     padding: 0.7rem 3rem;
     font-weight: 600;
     transition: 0.5s;
-    color: #000000;
+    color: #ffffff;
     background: linear-gradient(263.23deg, #FFCE00 6.67%, #FFCE00 70.3%, #FFCE00 100%);
     border-radius: 4px;
   }
@@ -6673,9 +6746,9 @@ color: #000000;
     line-height: 0;
     padding: 1.5rem 4rem;
     transition: 0.5s;
-    color: #000000;
+    color: #ffffff;
     border: 0px solid transparent;
-    background: linear-gradient(88.92deg, #319CFF 0.54%, #B7DCFF 47.28%, #0B86F8 96.97%);
+    background: linear-gradient(88.92deg, #003B43 0.54%, #003B43 47.28%, #003B43 96.97%);
     border-radius: 44px;
   }
 
@@ -6870,7 +6943,7 @@ color: #000000;
   }
 
   .form-login-freedy .bg-black {
-    background: #0D5FA4 !important;
+    background: #003B43  !important;
     border-radius: 10px;
 
     color: #fff;
@@ -6933,7 +7006,7 @@ color: #000000;
   }
 
   .form-login-freedy .btn-login {
-    background: linear-gradient(180deg, #5B90F7 0%, #3E79EA 100%);
+    background: linear-gradient(180deg, #003B43 0%, #003B43 100%);
     border-radius: 5px;
     font-weight: 500;
     font-size: 14px;
@@ -7929,7 +8002,7 @@ color: #000000;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #0F4E97;
+    color: #003B43;
   }
 
   .receive-note span {
@@ -8118,10 +8191,39 @@ color: #000000;
   }
 
   .freedy-accordion-item {
-    border: 3px solid #000000 !important;
-    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
-    background-color: #004C51;
+    border: 4px solid transparent !important;
+    border-radius: 20px !important;
+    background: 
+      linear-gradient(to right, #004C51, #004C51), 
+      linear-gradient(to right, #FFE500, #FFFFFF, #FFE500) !important; 
+    background-clip: padding-box, border-box !important;
+    background-origin: padding-box, border-box !important;
+  }
+
+  .freedy-accordion-item-reward {
+    border: 4px solid transparent !important;
+    border-radius: 20px !important;
+    background: 
+      linear-gradient(to right, white, white), 
+      linear-gradient(to right, #336268, #336268, #336268) !important; 
+    background-clip: padding-box, border-box !important;
+    background-origin: padding-box, border-box !important;
+  }
+
+  .freedy-accordion-button-reward {
+    background-color: #ffffff;
+    border-radius: 17px !important;
+  }
+
+  .freedy-accordion-button-reward:not(.collapsed) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #336268;
+  }
+
+  .freedy-accordion-button2 {
+    background-color: #ffffff !important;
+    border-radius: 17px !important;
   }
 
 
@@ -8147,6 +8249,15 @@ color: #000000;
     line-height: 110%;
     color: #ffffff;
   }
+
+  .box-title-accordion .head-reward {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 110%;
+    color: #336268;
+  }
+
   .box-title-accordion2 .head {
     display: block;
     font-weight: 700;
@@ -8159,6 +8270,13 @@ color: #000000;
     font-size: 12px;
     line-height: 110%;
     color: #ffffff;
+  }
+
+  .box-title-accordion .small-reward {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #336268;
   }
 
   .freedy-accordion-body p {
@@ -8178,9 +8296,9 @@ color: #000000;
   .freedy-card.multibtop {
     background: linear-gradient(#ffffff, #ffffff) padding-box,
     linear-gradient(to right, #66898E, #66898E, #66898E) border-box;
-    border-top-width: 7px;
+    border-top-width: 10px;
     border-top-style: solid;
-    border-top-color: transparent;
+    border-top-color: #66898E;
   }
     
   .multibtop {
@@ -8822,7 +8940,7 @@ color: #000000;
 
   .content-freedy h2 {
     font-weight: 600;
-    font-size: 27px;
+    font-size: 26px;
     line-height: 145.69%;
 
   }
@@ -8855,7 +8973,7 @@ color: #000000;
     padding: 0.7rem 3rem;
     font-weight: 600;
     transition: 0.5s;
-    color: #000000;
+    color: #ffffff;
     background: linear-gradient(263.23deg, #FFCE00 6.67%, #FFCE00 70.3%, #FFCE00 100%);
     border-radius: 4px;
   }
@@ -9068,9 +9186,9 @@ color: #000000;
     line-height: 0;
     padding: 1.5rem 4rem;
     transition: 0.5s;
-    color: #000000;
+    color: #ffffff;
     border: 0px solid transparent;
-    background: linear-gradient(88.92deg, #319CFF 0.54%, #B7DCFF 47.28%, #0B86F8 96.97%);
+    background: linear-gradient(88.92deg, #003B43 0.54%, #003B43 47.28%, #003B43 96.97%);
     border-radius: 44px;
   }
 
@@ -9253,9 +9371,8 @@ color: #000000;
   }
 
   .form-login-freedy .bg-black {
-    background: #0D5FA4 !important;
+    background: #003B43  !important;
     border-radius: 10px;
-
     color: #fff;
   }
 
@@ -9316,7 +9433,7 @@ color: #000000;
   }
 
   .form-login-freedy .btn-login {
-    background: linear-gradient(180deg, #5B90F7 0%, #3E79EA 100%);
+    background: linear-gradient(180deg, #003B43 0%, #003B43 100%);
     border-radius: 5px;
     font-weight: 500;
     font-size: 15px;
@@ -10311,7 +10428,7 @@ color: #000000;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #0F4E97;
+    color: #003B43;
   }
 
   .receive-note span {
@@ -10500,10 +10617,13 @@ color: #000000;
   }
 
   .freedy-accordion-item {
-    border: 3px solid #000000 !important;
-    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
-    background-color: #004C51;
+    border: 4px solid transparent !important;
+    border-radius: 20px !important;
+    background: 
+      linear-gradient(to right, #004C51, #004C51), 
+      linear-gradient(to right, #FFE500, #FFFFFF, #FFE500) !important; 
+    background-clip: padding-box, border-box !important;
+    background-origin: padding-box, border-box !important;
   }
 
   .freedy-accordion-button {
@@ -10529,6 +10649,15 @@ color: #000000;
     line-height: 110%;
     color: #ffffff;
   }
+
+  .box-title-accordion .head-reward {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 110%;
+    color: #336268;
+  }
+
   .box-title-accordion2 .head {
     display: block;
     font-weight: 700;
@@ -10542,6 +10671,13 @@ color: #000000;
     font-size: 14px;
     line-height: 110%;
     color: #ffffff;
+  }
+
+  .box-title-accordion .small-reward {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    color: #336268;
   }
 
   .freedy-accordion-body p {
@@ -10561,9 +10697,9 @@ color: #000000;
   .freedy-card.multibtop {
     background: linear-gradient(#ffffff, #ffffff) padding-box,
     linear-gradient(to right, #66898E, #66898E, #66898E) border-box;
-    border-top-width: 7px;
+    border-top-width: 10px;
     border-top-style: solid;
-    border-top-color: transparent;
+    border-top-color: #66898E;
     height: 348px;
   }
     
@@ -11010,6 +11146,31 @@ color: #000000;
     top: 150px;
     left: 70px;
   }
+
+  .bg-hero .position-relative .el-btc img {
+    width: 90px;
+    height: auto;
+  }
+
+  .bg-hero .position-relative .el-eth {
+    right: 32px;
+    top: 146px;
+  }
+
+  .bg-hero .position-relative .el-eth img {
+    width: 90px;
+    height: auto;
+  }
+
+  .bg-hero .position-relative .el-eur img {
+    width: 90px;
+    height: auto;
+  }
+
+  .bg-hero .position-relative .el-usd img {
+    width: 90px;
+    height: auto;
+  }
   
   .hero h1 {
     font-size: 54px;
@@ -11039,9 +11200,9 @@ color: #000000;
   .freedy-card.multibtop {
     background: linear-gradient(#ffffff, #ffffff) padding-box,
     linear-gradient(to right, #66898E, #66898E, #66898E) border-box;
-    border-top-width: 7px;
+    border-top-width: 10px;
     border-top-style: solid;
-    border-top-color: transparent;
+    border-top-color: #66898E;
     height: 480px;
   }
     
@@ -11275,7 +11436,7 @@ color: #000000;
   }
 
   .form-login-freedy .bg-black {
-    background: #0D5FA4 !important;
+    background: #003B43  !important;
     border-radius: 10px;
 
     color: #fff;
@@ -11338,7 +11499,7 @@ color: #000000;
   }
 
   .form-login-freedy .btn-login {
-    background: linear-gradient(180deg, #5B90F7 0%, #3E79EA 100%);
+    background: linear-gradient(180deg, #003B43 0%, #003B43 100%);
     border-radius: 5px;
     font-weight: 500;
     font-size: 15px;
@@ -11439,6 +11600,36 @@ color: #000000;
 
 
 @media (min-width: 1200px) {
+
+  .hero-institue a img {
+    top: 6px;
+  }
+
+  .bg-hero .position-relative .el-btc {
+    right: 32px;
+    top: 140px;
+  }
+
+  .bg-hero .position-relative .el-eth img {
+    width: 100px;
+    height: auto;
+  }
+
+  .bg-hero .position-relative .el-eur img {
+    width: 100px;
+    height: auto;
+  }
+
+  .bg-hero .position-relative .el-usd img {
+    width: 100px;
+    height: auto;
+  }
+
+  .bg-hero .position-relative .el-eth img {
+    width: 100px;
+    height: auto;
+  }
+
   .bg-hero {
     width: 100%;
     height: 663px;
@@ -11448,8 +11639,6 @@ color: #000000;
     background-size: contain;
   
   }
-
-
 
   .spec-convert-custody {
     left: 60%;
@@ -11638,7 +11827,7 @@ color: #000000;
 
   .content-freedy h2 {
     font-weight: 600;
-    font-size: 33px;
+    font-size: 31px;
     line-height: 145.69%;
   }
 
@@ -11900,9 +12089,9 @@ color: #000000;
     line-height: 0;
     padding: 1.5rem 4rem;
     transition: 0.5s;
-    color: #000000;
+    color: #ffffff;
     border: 0px solid transparent;
-    background: linear-gradient(88.92deg, #319CFF 0.54%, #B7DCFF 47.28%, #0B86F8 96.97%);
+    background: linear-gradient(88.92deg, #003B43 0.54%, #003B43 47.28%, #003B43 96.97%);
     border-radius: 44px;
   }
 
@@ -12099,7 +12288,7 @@ color: #000000;
   }
 
   .form-login-freedy .bg-black {
-    background: #0D5FA4 !important;
+    background: #003B43 !important;
     border-radius: 10px;
     color: #fff;
   }
@@ -12161,7 +12350,7 @@ color: #000000;
   }
 
   .form-login-freedy .btn-login {
-    background: linear-gradient(180deg, #5B90F7 0%, #3E79EA 100%);
+    background: linear-gradient(180deg, #003B43 0%, #003B43 100%);
     border-radius: 5px;
     font-weight: 500;
     font-size: 15px;
@@ -13161,7 +13350,7 @@ color: #000000;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #0F4E97;
+    color: #003B43;
   }
 
   .receive-note span {
@@ -13333,7 +13522,7 @@ color: #000000;
 
   .title-top-header {
     font-weight: 600;
-    font-size: 30px !important;
+    font-size: 38px !important;
     line-height: 110%;
     color: #003B43 !important;
   }
@@ -13360,31 +13549,54 @@ color: #000000;
   }
 
   .freedy-accordion-item {
-    border: 2px solid #000000 !important;
-    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
-    background-color: #004C51;
+    border: 4px solid transparent !important;
+    border-radius: 20px !important;
+    background: 
+      linear-gradient(to right, #004C51, #004C51), 
+      linear-gradient(to right, #FFE500, #FFFFFF, #FFE500) !important; 
+    background-clip: padding-box, border-box !important;
+    background-origin: padding-box, border-box !important;
+  }
+
+  .freedy-accordion-item-reward {
+    border: 4px solid transparent !important;
+    border-radius: 20px !important;
+    background: 
+      linear-gradient(to right, white, white), 
+      linear-gradient(to right, #336268, #336268, #336268) !important; 
+    background-clip: padding-box, border-box !important;
+    background-origin: padding-box, border-box !important;
   }
 
   .freedy-accordion-button {
     background-color: #004C51;
     border-radius: 10px !important;
-
   }
-    .freedy-accordion-button2 {
-        background-color: #ffffff;
-        border-radius: 5px !important;
-    }
 
+  .freedy-accordion-button-reward {
+    background-color: #ffffff;
+    border-radius: 17px !important;
+  }
 
   .freedy-accordion-button:not(.collapsed) {
     background-color: transparent !important;
     box-shadow: none !important;
   }
 
+  .freedy-accordion-button-reward:not(.collapsed) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #336268;
+  }
+
   .freedy-accordion-button::after {
     background-image: url(../img/arrow-landing.png) !important;
     background-repeat: no-repeat;
+  }
+
+  .freedy-accordion-button2 {
+      background-color: #ffffff !important;
+      border-radius: 17px !important;
   }
 
   .box-title-accordion .head {
@@ -13394,6 +13606,16 @@ color: #000000;
     line-height: 110%;
     color: #ffffff;
   }
+
+  .box-title-accordion .head-reward {
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 110%;
+    color: #336268;
+  }
+
+
 .box-title-accordion2 .head {
     display: block;
     font-weight: 700;
@@ -13407,6 +13629,13 @@ color: #000000;
     font-size: 20px;
     line-height: 110%;
     color: #ffffff;
+  }
+
+  .box-title-accordion .small-reward {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 110%;
+    color: #336268;
   }
 
   .freedy-accordion-body p {
@@ -13428,7 +13657,7 @@ color: #000000;
     linear-gradient(to right, #66898E, #66898E, #66898E) border-box;
     border-top-width: 10px;
     border-top-style: solid;
-    border-top-color: transparent;
+    border-top-color: #66898E;
     height: 550px;
   }
   
@@ -13860,6 +14089,11 @@ color: #000000;
 }
 
 @media (min-width: 1400px) {
+
+  .hero-institue a img {
+    top: 80px;
+  }
+
   .bg-hero {
     width: 100%;
     height: 765px;
@@ -14002,8 +14236,8 @@ color: #000000;
 
 .tbl-piggy-service tr td,
 .tbl-piggy-service tr th {
-  border: 4px solid #ffffff;
-  color: #ffffff;
+  border: 4px solid #000000;
+  color: #000000;
 }
 
 .text-blackgr {
@@ -14027,7 +14261,7 @@ color: #000000;
 
 
 .footer-links a .logo {
-  height: 75px;
+  height: 60px;
 }
 
 .footer-links a .trackless {
@@ -14095,15 +14329,15 @@ color: #000000;
   color: #000000;
 }
 
-    .in-crypto .box-crypto {
-        background: linear-gradient(88.92deg, #003B43 0.54%, #578187 47.00%, #336c74 90.00%);
-        border: 1px solid #0F4E97;
-        border-radius: 10px;
-        padding: 1rem;
-        display: flex;
-        flex: 1 1 auto;
-        flex-direction: column;
-    }
+.in-crypto .box-crypto {
+  background: linear-gradient(88.92deg, #336268 0.54%, #336268 47.00%, #336268 90.00%);
+  border: 1px solid #336268;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
 
 .in-crypto .box-crypto p {
   font-weight: 700;
@@ -14114,8 +14348,8 @@ color: #000000;
 }
 
 .box-p-crypto {
-    background: linear-gradient(97.98deg, #003B43 8.71%, #578187 42.93%, #336c74 122.46%);
-    border: 1px solid #0F4E97;
+    background: linear-gradient(97.98deg, #336268 8.71%, #336268 42.93%, #336268 122.46%);
+    border: 1px solid #336268;
     padding: 1rem;
     margin: 2rem 0;
     display: inline-block;

@@ -13,7 +13,7 @@
                 </ol>
             </div>
             <div class="col-6 m-auto d-none d-md-grid">
-                <img src="<?= base_url() ?>assets/img/img-11.svg" alt="img" class="img-fluid">
+                <img src="<?= base_url() ?>assets/img/img-11.png" alt="img" class="img-fluid">
             </div>
         </div>
     </div>

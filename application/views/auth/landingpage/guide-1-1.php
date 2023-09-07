@@ -20,7 +20,7 @@
                 </ol>
             </div>
             <div class="col-6 m-auto text-center d-none d-md-grid">
-                <img src="<?= base_url() ?>assets/img/img-9.svg" alt="img-8" class="img-fluid">
+                <img src="<?= base_url() ?>assets/img/img-9.png" alt="img-9" class="img-fluid">
             </div>
         </div>
     </div>

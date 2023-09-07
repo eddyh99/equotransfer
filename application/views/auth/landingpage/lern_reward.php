@@ -11,22 +11,22 @@
             </div>
             <div class="col-12 my-5 d-flex flex-row">
                 <div class="col-12 text-center">
-                    <h2 class="title-top-header fw-bold f-hahmlet text-blue-freedy py-2 px-5">
+                    <h1 class="title-top-header fw-bold f-hahmlet text-blue-freedy py-2 px-5">
                         Tell everyone about <span translate="no"> EquoTransfer </span> and earn every time they use it.
-                    </h2>
+                    </h1>
                     <h2 class="subtitle-top-header fw-bold " style="text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);">Share it!</h2>
                 </div>
             </div>
             <div class="col-12">
                 <div class="accordion" id="accordionFreedy">
-                    <div class="accordion-item freedy-accordion-item mb-5">
+                    <div class="accordion-item freedy-accordion-item-reward mb-5">
                         <h2 class="accordion-header m-0" id="pageOne">
-                            <button id="btnaccorionOne" class="accordion-button freedy-accordion-button collapsed"
+                            <button id="btnaccorionOne" class="accordion-button freedy-accordion-button-reward collapsed"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                 aria-expanded="false" aria-controls="collapseOne">
                                 <div class="box-title-accordion ms-auto text-center">
-                                    <span class="head text-blue-freedy f-hahmlet">How does it work</span>
-                                    <span class="small" id="seemoreOne">See more</span>
+                                    <span class="head-reward text-blue-freedy f-hahmlet">How does it work</span>
+                                    <span class="small-reward" id="seemoreOne">See more</span>
                                 </div>
                             </button>
                         </h2>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item freedy-accordion-item mb-5">
+                    <!-- <div class="accordion-item freedy-accordion-item mb-5">
                         <h2 class="accordion-header m-0" id="pageTwo">
                             <button id="btnaccorionTwo" class="accordion-button freedy-accordion-button collapsed"
                                 type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
@@ -57,7 +57,7 @@
                                 <?php $this->load->view('auth/landingpage/lern_reward-2'); ?>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
