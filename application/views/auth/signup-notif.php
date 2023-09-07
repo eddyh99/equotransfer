@@ -24,7 +24,7 @@
                     </div>
                     <div class="col-12 mb-auto mt-4">
                         <h5 class="text-center text-blue-freedy fw-semibold">
-                            To activate your LibertyBank account
+                            To activate your Equotransfer account
                             click the link received in your registration email
                             <br>
                             ATTENTION : 
