@@ -550,7 +550,7 @@
             </div>
             <div class="col-lg-4 col-12 text-center text-black my-5 d-flex justify-content-around align-items-center">
                 <div>
-                    <a href="<?= base_url() ?>" class="fw-bold text-white">
+                    <a href="<?= base_url() ?>link/privacy_policy" class="fw-bold text-white">
                         Privacy Policy
                     </a>
                 </div>

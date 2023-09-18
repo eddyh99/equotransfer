@@ -136,7 +136,7 @@
                             <h2 class="accordion-header m-0" id="pageFour">
                                 <button id="btnaccorionFour" class="accordion-button freedy-accordion-button2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     <div class="box-title-accordion2 ms-auto text-center">
-                                        <span class="head text-blue-freedy f-hahmlet py-3">How to withdraw funds and make bank transfers</span>
+                                        <span class="head text-blue-freedy f-hahmlet py-3 fw-normal">How to withdraw funds and make bank transfers</span>
                                     </div>
                                 </button>
                             </h2>
@@ -751,7 +751,7 @@
                                 <img src="<?= base_url() ?>assets/img/img-16.svg" alt="img" class="img-fluid">
                             </div>
                             <div class="col-12 features-text">
-                                <h4 class="text-dark f-jakarta">Request the service by contacting : ........@trackless.com</h4>
+                                <h4 class="text-dark f-jakarta">Request the service by contacting : </h4>
                             </div>
                         </div>
                     </div>
