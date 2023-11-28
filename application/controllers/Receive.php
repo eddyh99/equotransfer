@@ -55,6 +55,8 @@ class Receive extends CI_Controller
     
     public function localbank_confirm()
     {
+        $_POST["amount"]=str_replace(",","",$_POST["amount"]);
+        $_POST["confirm_amount"]=str_replace(",","",$_POST["confirm_amount"]);
 
         $this->form_validation->set_rules('amount', 'Amount', 'trim|required|greater_than[0]');
         $this->form_validation->set_rules('confirm_amount', 'Confirm Amount', 'trim|required|greater_than[0]|matches[amount]');
@@ -67,7 +69,14 @@ class Receive extends CI_Controller
 
         $input              = $this->input;
         $amount             = $this->security->xss_clean($input->post("amount"));
-        
+        $is_topup           = apitrackless(URLAPI . "/v1/member/wallet/is_topup?currency=EUR&userid=".$_SESSION["user_id"])->message;
+        if (empty($is_topup)){
+            if ($amount<35){
+                $this->session->set_flashdata('failed',"Minimum topup for first time is 35 EUR");
+                redirect("receive");
+            }
+
+        }
         $infolist = array(
             'amount'         => $amount,
         );
@@ -149,6 +158,9 @@ class Receive extends CI_Controller
 
     public function interbank_confirm()
     {
+        $_POST["amount"]=str_replace(",","",$_POST["amount"]);
+        $_POST["confirm_amount"]=str_replace(",","",$_POST["confirm_amount"]);
+
         $this->form_validation->set_rules('amount', 'Amount', 'trim|required|greater_than[0]');
         $this->form_validation->set_rules('confirm_amount', 'Confirm Amount', 'trim|required|greater_than[0]|matches[amount]');
         $this->form_validation->set_rules('currency', 'Currency', 'trim');

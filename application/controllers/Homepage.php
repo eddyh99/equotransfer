@@ -32,6 +32,7 @@ class Homepage extends CI_Controller
         
         $url = URLAPI . "/v1/member/currency/getActiveCurrency";
         $currency   = apitrackless($url, json_encode($mdata))->message;
+        $is_topup   = apitrackless(URLAPI . "/v1/member/wallet/is_topup?currency=EUR&userid=".$_SESSION["user_id"])->message;
         
         $data = array();
         foreach ($currency as $dt) {
@@ -40,6 +41,10 @@ class Homepage extends CI_Controller
                 $temp["symbol"] = $dt->symbol;
                 $temp["status"] = $dt->status;
                 $temp["balance"] = apitrackless(URLAPI . "/v1/member/wallet/getBalance?currency=" . $dt->currency . "&userid=" . $_SESSION["user_id"])->message->balance;
+
+                if ($dt->currency=="EUR"){
+                    $temp["balance"]=(empty($is_topup)) ? -30:$temp["balance"];
+                }
                 array_push($data, (object) $temp);
             }
         }
@@ -121,6 +126,14 @@ class Homepage extends CI_Controller
                 $_SESSION["currency"] = "USD";
                 $_SESSION["symbol"] = "&dollar;";
             }
+        }
+
+        $is_topup   = apitrackless(URLAPI . "/v1/member/wallet/is_topup?currency=EUR&userid=".$_SESSION["user_id"])->message;
+        if (empty($is_topup) && $_GET["cur"]!="EUR"){
+            $this->session->set_flashdata("failed","You must topup EUR for first time to be able use your account");
+            $_SESSION["currency"] = "EUR";
+            $_SESSION["symbol"] = "&euro;";
+            redirect("homepage/wallet?cur=EUR");
         }
 
         $mdata = array(

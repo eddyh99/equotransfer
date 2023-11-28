@@ -13,6 +13,12 @@ class Swap extends CI_Controller
 
     public function index()
     {
+        $is_topup   = apitrackless(URLAPI . "/v1/member/wallet/is_topup?currency=EUR&userid=".$_SESSION["user_id"])->message;
+        if (empty($is_topup)){
+            $this->session->set_flashdata("failed","You must topup EUR for first time to be able use your account");
+            redirect("homepage/wallet?cur=EUR");
+        }
+        
         $mdata = array(
             "userid" => $_SESSION["user_id"]
         );

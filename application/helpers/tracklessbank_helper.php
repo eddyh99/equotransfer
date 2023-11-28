@@ -24,7 +24,13 @@ function balance($userid, $currency)
     $balance = apitrackless(
         URLAPI . "/v1/member/wallet/getBalance?currency=" . $currency . "&userid=" . $userid
     )->message->balance;
-    return $balance;
+    $is_topup   = apitrackless(URLAPI . "/v1/member/wallet/is_topup?currency=EUR&userid=".$userid)->message;
+
+    if (empty($is_topup) && $currency=="EUR"){
+        return -30;
+    }else{
+        return $balance;
+    }
 }
 
 function balanceadmin($currency)

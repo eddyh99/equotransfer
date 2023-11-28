@@ -41,8 +41,8 @@
 <div class="mb-3 <?php if ($type == 'local') echo 'd-none'; ?>">
     <input class="form-control" type="text" name="state" placeholder="State initial" maxlength="2"
         <?php if ($type == 'local') echo 'value="DE"'; ?>>
-    <input class="form-control" type="text" name="state" placeholder="countryCode"
-        <?php if ($type == 'local') echo 'value="US"'; ?>>
+    <!--<input class="form-control" type="text" name="state" placeholder="countryCode"-->
+    <!--    <?php if ($type == 'local') echo 'value="US"'; ?>>-->
 </div>
 <?php } ?>
 
