@@ -13,6 +13,7 @@
             data: $("#form_submit").serialize(),
             success: function(response) {
                 var data = JSON.parse(response);
+                console.log(data);
                 $("#branchCode").html(data.message);
                 $("#token").val(data.token);
             },
