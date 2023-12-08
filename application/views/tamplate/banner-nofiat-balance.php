@@ -45,7 +45,7 @@
                   <div class="saldo-box d-flex flex-row justify-content-center align-items-center ">
                       <span class="saldo me-auto">
                           <?= $_SESSION["symbol"] ?>
-                          <?= substr(number_format(balance($_SESSION['user_id'], $_SESSION["currency"]), 4), 0, -2) ?>
+                          <?= number_format(balance($_SESSION['user_id'], $_SESSION["currency"]), 2) ?>
                       </span>
                   </div>
               </div>
