@@ -109,7 +109,7 @@
                                 </span>
                             <?php } else {?>
                                     <span class="form-control border-0 px-0"><?= $_SESSION['symbol']; ?>
-                                        <?= number_format($_SESSION["tcbalance"],2) - number_format($data["deduct"], 2, ".", ",")?>
+                                        <?= number_format($_SESSION["tcbalance"]-$data["deduct"], 2, ".", ",")?>
                                     </span>
                             <?php } ?>
                         </div>

@@ -52,7 +52,7 @@
                         ?>
 
                         <div class="mb-3">
-                            <input class="form-control" type="text" name="causal" placeholder="Causal">
+                            <input class="form-control" type="text" name="causal" placeholder="Causal" maxlength="10">
                         </div>
 
                         <div class="col-12 mb-3">
