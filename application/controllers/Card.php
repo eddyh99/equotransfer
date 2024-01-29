@@ -16,6 +16,11 @@ class Card extends CI_Controller
         $_SESSION["currency"]   = 'EUR';
         $_SESSION["symbol"]     = '&euro;';
         $result = apitrackless(URLAPI . "/v1/member/card/check_card?userid=" . $_SESSION["user_id"]);
+        $summary = apitrackless(URLAPI . "/v1/member/card/topupSummary");
+
+        // echo '<pre>'.print_r($summary,true).'</pre>';
+        // die;
+
         if (@$result->message->card == "unavailable"){
             // tampilkan untuk pendaftaran card baru            
             $_SESSION["currency"]="EUR";
@@ -100,6 +105,9 @@ class Card extends CI_Controller
             $this->session->set_flashdata("failed","Insufficient EUR balance");
             redirect ("card");
         }
+
+        echo '<pre>'.print_r($mcost,true).'</pre>';
+
         $data=array(
             "title"                     => NAMETITLE . " - Card",
             "basecard"                  => 'homepage/requestcard',
@@ -161,9 +169,11 @@ class Card extends CI_Controller
         // $exp    = date("d M Y",strtotime($exp_date));
         // $card   = apitrackless(URLAPI . "/v1/member/card/decodeCard?card_id=" . $card_id);
 
-
+        
         // Comment this for Debugging Request Card
         $result = apitrackless(URLAPI . "/v1/member/card/activate_card", json_encode($mdata));
+        echo '<pre>'.print_r($result,true).'</pre>';
+        die;
         if (@$result->code != "200") {
             $this->session->set_flashdata('failed', "Please check your phone format or 3ds Password");
             redirect ("card/requestcard?requestcard=YWN0aXZlbm93");
@@ -446,12 +456,12 @@ class Card extends CI_Controller
 
 
         // Comment this for Debugging Request Card
-        // $result = apitrackless(URLAPI . "/v1/member/card/activate_physical_card", json_encode($mdata));
-        // if (@$result->code != "200") {
-        //     $this->session->set_flashdata('failed', "Please check shipping address, your phone format or 3ds Password");
-        //     redirect ("card/requestcard_physical?requestcard_physical=cmVxdWVzdGNhcmRfcGh5c2ljYWw=");
-        //     return;
-        // }
+        $result = apitrackless(URLAPI . "/v1/member/card/activate_physical_card", json_encode($mdata));
+        if (@$result->code != "200") {
+            $this->session->set_flashdata('failed', "Please check shipping address, your phone format or 3ds Password");
+            redirect ("card/requestcard_physical?requestcard_physical=cmVxdWVzdGNhcmRfcGh5c2ljYWw=");
+            return;
+        }
         // Comment this for Debugging Request Card
 
         $data=array(
@@ -530,7 +540,10 @@ class Card extends CI_Controller
             "transfer_type"     => 'circuit',
         );        
 
-        $result = apitrackless(URLAPI . "/v1/member/wallet/bankSummary", json_encode($mdata));
+        $result = apitrackless(URLAPI . "/v1/member/card/topupSummary", json_encode($mdata));
+
+        // echo '<pre>'.print_r($result,true).'</pre>';
+        // die;
 
         if (@$result->code != 200) {
             $this->session->set_flashdata("failed", $result->message);
@@ -574,8 +587,6 @@ class Card extends CI_Controller
         );        
 
         $result = apitrackless(URLAPI . "/v1/member/card/topupprocess", json_encode($mdata));
-        // v(json_encode($result));
-        // die;
         if (@$result->code != 200) {
             $this->session->set_flashdata("failed", $result->message);
             redirect(base_url() . "card/topupcard");
