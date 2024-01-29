@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  color: #FFCE00;
+  color: #000;
   text-decoration: none;
 }
 
@@ -310,7 +310,7 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 .card-input-dlh:checked+.card {
-  border: 2px solid #0F4E97;
+  border: 2px solid #003B43;
   -webkit-transition: border .3s;
   -o-transition: border .3s;
   transition: border .3s;
@@ -326,8 +326,8 @@ color: rgba(255, 255, 255, 0.8);
 }
 
 .card-input-dlh:checked+.card .c-dlh {
-  background-color: #0F4E97;
-  border: 1px solid #0F4E97;
+  background-color: #003B43;
+  border: 1px solid #FFCE00;
 }
 
 .card-input-dlh+.card .m-dlh {
@@ -352,14 +352,14 @@ color: rgba(255, 255, 255, 0.8);
 .btn-card-confirm-nocard{
   padding: 1rem 3rem;
   transition: 0.5s;
-  color: #000000;
+  color: #ffffff;
   border: none;
-  background: linear-gradient(97.98deg, #319CFF 8.71%, #AED8FF 42.93%, #0B86F8 122.46%);
+  background: linear-gradient(97.98deg, #003B43 8.71%, #003B43 42.93%, #003B43 122.46%);
   border-radius: 26.386px;
 }
 
 .btn-card-confirm-nocard:hover{
-  color: #000000;
+  color: #FFCF24;
 
 }
 
@@ -475,20 +475,21 @@ color: rgba(255, 255, 255, 0.8);
 .btn-card-confirm{
   padding: 1rem 3rem;
   transition: 0.5s;
-  color: #000000;
+  color: #ffffff;
   border: none;
-  background: linear-gradient(97.98deg, #319CFF 8.71%, #AED8FF 42.93%, #0B86F8 122.46%);
+  background: linear-gradient(97.98deg, #003B43 8.71%, #003B43 42.93%, #003B43 122.46%);
   border-radius: 26.386px;
 }
 
 .btn-card-confirm:hover{
-  color: #000000;
+  color: #FFCF24;
   
+  border: 2px solid #FFCF24;
 }
 
 .wrap-border-topup {
   background: linear-gradient(#fff, #fff) padding-box,
-  linear-gradient(to right, #00A7DC, #0F4E97, #0F4E97) border-box;
+  linear-gradient(to right, #003B43, #003B43, #003B43) border-box;
   border-radius: 10px;
   border: 3px solid transparent;
 
@@ -568,14 +569,14 @@ color: rgba(255, 255, 255, 0.8);
 .card-topup {
   height: 80px;
   background: linear-gradient(#ffffff, #ffffff) padding-box,
-  linear-gradient(to right, #0066FF, #0066FF, #0066FF) border-box;
+  linear-gradient(to right, #003B43, #003B43, #003B43) border-box;
   border-radius: 12px;
   border: 3px solid transparent;
 }
 
 .card-topup:hover{
-  background: linear-gradient(#0066FF, #0066FF) padding-box,
-  linear-gradient(to right, #0066FF, #0066FF, #0066FF) border-box;
+  background: linear-gradient(#003B43, #003B43) padding-box,
+  linear-gradient(to right, #FFCF24, #FFCF24, #FFCF24) border-box;
   color: #ffffff;
 }
 
@@ -3625,7 +3626,9 @@ color: #000000;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+text-black-equo{
 
+}
 .text-blue-freedy.black {
   color: #000 !important;
 }

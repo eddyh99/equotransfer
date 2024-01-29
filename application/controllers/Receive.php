@@ -58,8 +58,8 @@ class Receive extends CI_Controller
         $_POST["amount"]=str_replace(",","",$_POST["amount"]);
         $_POST["confirm_amount"]=str_replace(",","",$_POST["confirm_amount"]);
 
-        $this->form_validation->set_rules('amount', 'Amount', 'trim|required|greater_than[0]');
-        $this->form_validation->set_rules('confirm_amount', 'Confirm Amount', 'trim|required|greater_than[0]|matches[amount]');
+        $this->form_validation->set_rules('amount', 'Amount', 'trim|required');
+        $this->form_validation->set_rules('confirm_amount', 'Confirm Amount', 'trim|required|matches[amount]');
 
         if ($this->form_validation->run() == FALSE) {
             $this->session->set_flashdata('failed', "<p style='color:black'>" . validation_errors() . "</p>");
