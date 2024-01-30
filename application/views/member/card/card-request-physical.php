@@ -271,8 +271,8 @@ require_once('countries-list.php'); ?>
                                         <div class="col-12 col-md-10 mx-auto">
                                         <select name="country" class="form-select nohp-select inputPass me-2" id="countryCode">
                                             <option value="">--Country--</option>
-                                            <?php foreach ($countries_list as $cur) { ?>
-                                            <option value="<?= $cur['code'] ?>"><?= $cur['code'] . ' - ' . $cur['name'] ?></option>
+                                            <?php foreach ($EURCountry as $cur) { ?>
+                                                <option value="<?= $cur['code'] ?>"><?= $cur['code'] . ' - ' . $cur['name'] ?></option>
                                             <?php } ?>
                                         </select>
                                         </div>
