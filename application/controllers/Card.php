@@ -262,6 +262,34 @@ class Card extends CI_Controller
             redirect ("card");
         }
 
+        $EURCountry = array(
+            array("name"=>"Austria","code"=>"AUT"),
+            array("name"=>"Netherlands (the),","code"=>"NLD"),
+            array("name"=>"Belgium","code"=>"BEL"),
+            array("name"=>"Bulgaria","code"=>"BGR"),
+            array("name"=>"Croatia","code"=>"HRV"),
+            array("name"=>"Cyprus","code"=>"CYP"),
+            array("name"=>"Denmark","code"=>"DNK"),
+            array("name"=>"Estonia","code"=>"EST"),
+            array("name"=>"Finland","code"=>"FIN"),
+            array("name"=>"France","code"=>"FRA"),
+            array("name"=>"Germany","code"=>"DEU"),
+            array("name"=>"Hungary","code"=>"HUN"),
+            array("name"=>"Ireland","code"=>"IRL"),
+            array("name"=>"Italy","code"=>"ITA"),
+            array("name"=>"Latvia","code"=>"LVA"),
+            array("name"=>"Lithuania","code"=>"LTU"),
+            array("name"=>"Luxembourg","code"=>"LUX"),
+            array("name"=>"Malta","code"=>"MLT"),
+            array("name"=>"Poland","code"=>"POL"),
+            array("name"=>"Portugal","code"=>"PRT"),
+            array("name"=>"Romania","code"=>"ROU"),
+            array("name"=>"Slovenia","code"=>"SVN"),
+            array("name"=>"Slovakia","code"=>"SVK"),
+            array("name"=>"Spain","code"=>"ESP"),
+            array("name"=>"Sweden","code"=>"SWE")
+        );
+
         $data=array(
             "title"                 => NAMETITLE . " - Card Shipping",
             "basecard"              => 'homepage/requestcard_physical',            
@@ -269,6 +297,7 @@ class Card extends CI_Controller
             "requestcard"           => base64_decode(@$_GET['requestcard']), 
             "card"                  => @$_GET['card'],
             "shiptype"              => $shiptype,
+            "EURCountry"            => $EURCountry,
             "extra"                 => "member/card/js/js_index"
         );
 
