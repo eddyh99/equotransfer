@@ -1,16 +1,16 @@
-<!-- <div id="load" style="display: block;">
+ <div id="load" style="display: block;">
     <div class="img-load d-flex flex-column justify-content-center align-items-center">
 
-        <!-- For Logo Loading
+         <!--For Logo Loading-->
         <img src="<?= base_url()?>assets/img/logo-only.svg" alt="img-load">
         <span class="pt-3">Please wait...</span>
         
-        <!-- For Circle Loading 
-        <!-- <div class="spinner-border" role="status">
+         <!--For Circle Loading -->
+         <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-</div> -->
+</div>
 <?php if($requestcard == 'detailcard') {?>
     <div class="d-flex justify-content-center">
         <div class="col-12 col-lg-8 col-xl-6">
@@ -104,11 +104,11 @@
                                     Card
                                 </h1>
                             </div>
-                            <a href="<?= base_url(); ?>card/requestcard?requestcard=<?= base64_encode('virtual')?>" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center">
-                                <span class="text-blue-freed fw-bold text-center f-hahmlet fw-bold">
-                                Request Virtual Card
-                                </span>
-                            </a>
+                            <!--<a href="<?= base_url(); ?>card/requestcard?requestcard=<?= base64_encode('virtual')?>" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center">-->
+                            <!--    <span class="text-blue-freed fw-bold text-center f-hahmlet fw-bold">-->
+                            <!--    Request Virtual Card-->
+                            <!--    </span>-->
+                            <!--</a>-->
                             <a href="<?= base_url(); ?>card/requestcard_physical?requestcard_physical=<?= base64_encode('requestcard_physical')?>" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center mt-4">
                                 <span class="text-blue-freed fw-bold text-center f-hahmlet fw-bold">
                                     Request Physical Card 
@@ -153,7 +153,7 @@
                                                 </i>
                                             </span>
                                         </div>
-                                        <span class="d-flex ps-3 mt-2" style="font-size: 12px; color: gray;">Password must at least 8 - 35 Character</span>
+                                        <span class="d-flex ps-3 mt-2" style="font-size: 12px; color: gray;">Password must at least 8 - 35 Character, must contain at least one capital letter, letters and numbers</span>
                                     </div>
                                     <div class="col-md-10 my-2 mt-4">
                                         <div class="d-flex justify-content-evenly align-items-center wrap-3dsecure">
@@ -167,6 +167,12 @@
                                         
                                     </div>
                                 </div>
+                                <div class="row my-4 mx-auto d-flex justify-content-center">
+                                    <div class="col-12 col-md-10 mx-auto">
+                                        <input name="email" id="email" autocomplate="false" class="nohp-select input-nohp" type="email">
+                                    </div>
+                                </div>
+
                                 <div class="text-start d-flex justify-content-center mt-5 mb-4">
                                     <button type="submit"
                                         class="btn-card-confirm d-inline-flex align-items-center justify-content-center align-self-center">

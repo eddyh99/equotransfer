@@ -481,7 +481,7 @@ class Mwallet extends CI_Controller
 
         if ($_SESSION["role"]=="admin"){
             $mdata = array(
-                // "userid"            => $_SESSION["user_id"],
+                //"userid"            => $_SESSION["user_id"],
                 "currency"          => $_SESSION["currency"],
                 "amount"            => $this->security->xss_clean($input->post("amount")),
                 "transfer_type"     => $this->security->xss_clean($input->post("transfer_type")),
@@ -496,7 +496,7 @@ class Mwallet extends CI_Controller
             );
             $result = apitrackless(URLAPI . "/v1/trackless/withdraw/WDTrackless_Summary", json_encode($mdata));
         }
-
+        
         if (@$result->code != 200) {
             $this->session->set_flashdata("failed", $result->message);
             redirect(base_url() . "admin/mwallet/" . $this->security->xss_clean($input->post("url")));
