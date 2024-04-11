@@ -57,7 +57,7 @@
                         </div>
 
                         <div class="col-12 mb-3">
-                            <a href="<?= base_url() ?>admin/mwallet/withdraw"
+                            <a href="<?= base_url() ?>godmode/mwallet/withdraw"
                                 class="btn btn-freedy-white px-4 py-2 me-2 shadow-none">Cancel</a>
                             <button class="btn btn-freedy-green px-4 py-2 mx-2 shadow-none"
                                 id="btnconfirm">Confirm</button>

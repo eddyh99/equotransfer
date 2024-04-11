@@ -19,6 +19,10 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-money-bill"></i></div>
                             <?=NAMETITLE?> Fee
                         </a>
+                        <a class="nav-link <?= @$mn_withdraw ?>" href="<?= base_url() ?>admin/withdraw">
+                            <div class="sb-nav-link-icon"><i class="fas fa-money-check-alt"></i></div>
+                            Withdraw Member
+                        </a>
                         <a class="nav-link" href="<?= base_url() ?>auth/logout">
                             <div class="sb-nav-link-icon"><i class="fas fa-sign-out"></i></div>
                             Logout
