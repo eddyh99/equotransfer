@@ -106,7 +106,7 @@ class Card extends CI_Controller
             redirect ("card");
         }
 
-        echo '<pre>'.print_r($mcost,true).'</pre>';
+        //echo '<pre>'.print_r($mcost,true).'</pre>';
 
         $data=array(
             "title"                     => NAMETITLE . " - Card",
@@ -128,7 +128,6 @@ class Card extends CI_Controller
         $this->form_validation->set_rules('telp', 'Phone Number', 
             array(
                 'trim',
-                'required',
                 array(
                     'validate_security',
                     function($str) {
@@ -143,8 +142,9 @@ class Card extends CI_Controller
             ),
             array('validate_security' => 'Invalid {field} format')
         );
-        $this->form_validation->set_rules('passwd', '3d secure password', 'trim|required|min_length[8]|max_length[36]');
+        $this->form_validation->set_rules('passwd', '3d secure password', 'trim|min_length[8]|max_length[36]');
         $this->form_validation->set_rules('confpasswd', 'Confirm 3d secure password', 'trim|required|matches[passwd]');
+        $this->form_validation->set_rules('email', '3d secure email', 'trim|required|valid_email');
 
         if ($this->form_validation->run() == FALSE) {
             $this->session->set_flashdata("failed",validation_errors());
@@ -153,13 +153,15 @@ class Card extends CI_Controller
         $input      = $this->input;
         $telp       = $this->security->xss_clean($input->post("telp"));
         $passwd     = $this->security->xss_clean($input->post("passwd"));
+        $email       = $this->security->xss_clean($input->post("email"));
 
         $mdata  = array(
             "userid"    => $_SESSION["user_id"],
             "ucode"     => $_SESSION["ucode"],
             "currency"  => 'EUR',
             "phone"     => $telp,
-            "password"  => $passwd
+            "password"  => $passwd,
+            "email"     => $email
         );
 
         // Active this comment For Checking Get Information
@@ -172,10 +174,10 @@ class Card extends CI_Controller
         
         // Comment this for Debugging Request Card
         $result = apitrackless(URLAPI . "/v1/member/card/activate_card", json_encode($mdata));
-        echo '<pre>'.print_r($result,true).'</pre>';
-        die;
+        // echo '<pre>'.print_r($result,true).'</pre>';
+        // die;
         if (@$result->code != "200") {
-            $this->session->set_flashdata('failed', "Please check your phone format or 3ds Password");
+            $this->session->set_flashdata('failed', $result->message);
             redirect ("card/requestcard?requestcard=YWN0aXZlbm93");
             return;
         }
@@ -429,6 +431,7 @@ class Card extends CI_Controller
         $passwd         = $this->security->xss_clean($input->post("passwd"));
 
         $carddetail=array(
+            "type"          => "ChipAndPin",
             "3d_secure_settings"    => array(
                 "mobile"    => $telp,
                 "password"  => $passwd
@@ -460,6 +463,8 @@ class Card extends CI_Controller
     public function activephysiccard(){
         $mfee = apitrackless(URLAPI . "/v1/admin/fee/getFee?currency=EUR");
         $mcost = apitrackless(URLAPI . "/v1/admin/cost/getCost?currency=EUR");
+        //print_r($mcost);
+        //echo "<hr>";
         $card_fee = @$mfee->message->card_fxd;
         $card_cost = @$mcost->message->card_fxd;
 
@@ -483,9 +488,12 @@ class Card extends CI_Controller
             "card_detail"    => $_SESSION["carddetail"]
         );
 
-
+        //print_r($mdata);
+        //echo "<hr>";
         // Comment this for Debugging Request Card
         $result = apitrackless(URLAPI . "/v1/member/card/activate_physical_card", json_encode($mdata));
+        //echo "<pre>".print_r($result,true)."</pre>";
+        //die;
         if (@$result->code != "200") {
             $this->session->set_flashdata('failed', "Please check shipping address, your phone format or 3ds Password");
             redirect ("card/requestcard_physical?requestcard_physical=cmVxdWVzdGNhcmRfcGh5c2ljYWw=");
