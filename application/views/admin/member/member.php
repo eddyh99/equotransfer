@@ -26,7 +26,7 @@
                     <i class="fas fa-list me-1"></i>
                     List Member
                 </div>
-                <div class="card-body">
+                <div class="card-body shadow-sm">
                     <table id="member" class="table table-bordered">
                         <thead class="table-primary">
                             <tr>

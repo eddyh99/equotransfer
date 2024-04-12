@@ -22,7 +22,7 @@
                 <div class="card-header fw-bold">
                     <?=NAMETITLE?> Fee
                 </div>
-                <div class="card-body">
+                <div class="card-body shadow-sm">
                     <div class="row mb-3">
                         <label for="currency" class="col-sm-2 col-form-label">Currency</label>
                         <div class="col-sm-10">
