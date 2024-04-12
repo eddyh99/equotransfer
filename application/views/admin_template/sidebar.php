@@ -23,6 +23,10 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-money-check-alt"></i></div>
                             Withdraw Member
                         </a>
+                        <a class="nav-link <?= @$mn_settings ?>" href="<?= base_url() ?>admin/cost/settings">
+                            <div class="sb-nav-link-icon"><i class="fas fa-money-check-alt"></i></div>
+                            Settings
+                        </a>
                         <a class="nav-link" href="<?= base_url() ?>auth/logout">
                             <div class="sb-nav-link-icon"><i class="fas fa-sign-out"></i></div>
                             Logout

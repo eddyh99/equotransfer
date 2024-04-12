@@ -142,6 +142,11 @@
                         <input type="text" id="card_fxd" name="card_fxd" class="form-control"
                             readonly>
                     </div>
+                    <div class="mb-3" id="min_wd_div">
+                        <label class="form-label">Min Withdraw</label>
+                        <input type="text" id="min_wd" name="min_wd" class="form-control"
+                            readonly>
+                    </div>
                     <div class="text-start">
                         <a id="editfee" class="btn btn-green">Edit</a>
                     </div>

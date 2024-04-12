@@ -30,7 +30,7 @@ class Fee extends CI_Controller
 		$currency		= $this->security->xss_clean($_GET["currency"]);
 
 		$mfee = apitrackless(URLAPI . "/v1/admin/fee/getFee?currency=" . $currency);
-
+        
 		$mdata = array();
 		if (@$mfee->code == 200) {
 			$mdata = array(
@@ -55,6 +55,7 @@ class Fee extends CI_Controller
 				"referral_bank_fxd" => number_format($mfee->message->referral_bank_fxd, 2, ".", ","),
 				"referral_bank_pct" => number_format($mfee->message->referral_bank_pct * 100, 2, ".", ","),
 				"card_fxd" => number_format($mfee->message->card_fxd, 2, ".", ","),
+				"min_wd" => number_format($mfee->message->min_wd, 0, ".", ","),
 			);
 		} else {
 			$mdata = array(
@@ -79,6 +80,7 @@ class Fee extends CI_Controller
 				"referral_bank_fxd" => number_format(0, 2, ".", ","),
 				"referral_bank_pct" => number_format(0 * 100, 2, ".", ","),
 				"card_fxd" => number_format(0, 2, ".", ","),
+				"min_wd" => 0,
 			);
 		}
 		echo json_encode($mdata);
@@ -87,7 +89,6 @@ class Fee extends CI_Controller
 	public function editfee($currency)
 	{
 		$mfee = apitrackless(URLAPI . "/v1/admin/fee/getFee?currency=" . $currency);
-
 		$mdata = array();
 		if (@$mfee->code == 200) {
 			$mdata = array(
@@ -112,6 +113,7 @@ class Fee extends CI_Controller
 				"referral_bank_fxd" => number_format($mfee->message->referral_bank_fxd, 2, ".", ","),
 				"referral_bank_pct" => number_format($mfee->message->referral_bank_pct * 100, 2, ".", ","),
 				"card_fxd" => number_format($mfee->message->card_fxd, 2, ".", ","),
+				"min_wd" => number_format($mfee->message->min_wd, 0, ".", ","),
 			);
 		} else {
 			$mdata = array(
@@ -136,6 +138,7 @@ class Fee extends CI_Controller
 				"referral_bank_fxd" => number_format(0, 2, ".", ","),
 				"referral_bank_pct" => number_format(0, 2, ".", ","),
 				"card_fxd" => number_format(0, 2, ".", ","),
+				"min_wd" => number_format(0, 0, ".", ","),
 			);
 		}
 
@@ -198,6 +201,8 @@ class Fee extends CI_Controller
         $_POST["referral_bank_pct"]=$new_referral_bank_pct;
 		$new_card_fxd = preg_replace('/,(?=[\d,]*\.\d{2}\b)/', '', $this->input->post("card_fxd"));
 				$_POST["card_fxd"]=$new_card_fxd;
+		$min_wd = preg_replace('/,(?=[\d,]*\.\d{2}\b)/', '', $this->input->post("min_wd"));
+				$_POST["min_wd"]=$min_wd;
 
 		if (($currency == "USD") ||
 			($currency == "EUR") ||
@@ -357,6 +362,7 @@ class Fee extends CI_Controller
 			"referral_bank_fxd" => $referral_bank_fxd,
 			"referral_bank_pct" => $referral_bank_pct / 100,
 			"card_fxd"          => $card_fxd,
+			"min_wd"          => $min_wd,
 		);
 		$result = apitrackless(URLAPI . "/v1/admin/fee/setFee", json_encode($mdata));
 

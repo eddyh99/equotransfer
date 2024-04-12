@@ -31,6 +31,7 @@ function readfee() {
             $("#referral_bank_fxd").val(data.referral_bank_fxd)
             $("#referral_bank_pct").val(data.referral_bank_pct)
             $("#card_fxd").val(data.card_fxd)
+            $("#min_wd").val(data.min_wd)
 
             if ((readcurrency != "USD") &&
                 (readcurrency != "EUR") &&

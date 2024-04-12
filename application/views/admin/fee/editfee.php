@@ -174,6 +174,10 @@
                                 class="form-control money-input" value="<?= $fee['card_fxd'] ?>">
                         </div>
                         <?php }?>
+                        <div class="mb-3" id="min_wd_div">
+                            <label class="form-label">Min Withdraw (leave 0 if no threshold)</label>
+                            <input type="text" id="min_wd" name="min_wd" class="form-control money-input" value="<?= $fee['min_wd'] ?>>
+                        </div>
                         <div class="mb-3">
                             <a href="<?= base_url() ?>admin/fee" class="btn btn-warning">Cancel</a>
                             <button id="btnconfirm" class="btn btn-green">Confirm</button>

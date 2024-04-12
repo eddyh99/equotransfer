@@ -67,4 +67,22 @@ class Cost extends CI_Controller
 		}
 		echo json_encode($mdata);
 	}
+	
+	public function settings(){
+	    $mfee = apitrackless(URLAPI . "/v1/admin/cost/getSettings");
+        $data = array(
+			"title"     => NAMETITLE . " - Settings",
+			"content"   => "admin/settings/index",
+			"mn_settings"    => "active",
+		);
+
+		$this->load->view('admin_template/wrapper', $data);
+	}
+	
+	public function savesettings(){
+	    $autowd		= $this->security->xss_clean($_POST["autowd"]);
+
+		$res = apitrackless(URLAPI . "/v1/admin/cost/setSettings?autowd=" . $autowd);
+        redirect('admin/cost/settings');
+	}
 }
