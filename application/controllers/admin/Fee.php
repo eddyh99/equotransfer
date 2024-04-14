@@ -30,7 +30,10 @@ class Fee extends CI_Controller
 		$currency		= $this->security->xss_clean($_GET["currency"]);
 
 		$mfee = apitrackless(URLAPI . "/v1/admin/fee/getFee?currency=" . $currency);
-        
+		
+		// echo '<pre>'.print_r($mfee,true).'</pre>';
+		// die;
+
 		$mdata = array();
 		if (@$mfee->code == 200) {
 			$mdata = array(
@@ -55,7 +58,7 @@ class Fee extends CI_Controller
 				"referral_bank_fxd" => number_format($mfee->message->referral_bank_fxd, 2, ".", ","),
 				"referral_bank_pct" => number_format($mfee->message->referral_bank_pct * 100, 2, ".", ","),
 				"card_fxd" => number_format($mfee->message->card_fxd, 2, ".", ","),
-				"min_wd" => number_format($mfee->message->min_wd, 0, ".", ","),
+				"min_wd" => number_format($mfee->message->min_wd, 2, ".", ","),
 			);
 		} else {
 			$mdata = array(
@@ -80,7 +83,7 @@ class Fee extends CI_Controller
 				"referral_bank_fxd" => number_format(0, 2, ".", ","),
 				"referral_bank_pct" => number_format(0 * 100, 2, ".", ","),
 				"card_fxd" => number_format(0, 2, ".", ","),
-				"min_wd" => 0,
+				"min_wd" => number_format(0, 2, ".", ","),
 			);
 		}
 		echo json_encode($mdata);
@@ -113,7 +116,7 @@ class Fee extends CI_Controller
 				"referral_bank_fxd" => number_format($mfee->message->referral_bank_fxd, 2, ".", ","),
 				"referral_bank_pct" => number_format($mfee->message->referral_bank_pct * 100, 2, ".", ","),
 				"card_fxd" => number_format($mfee->message->card_fxd, 2, ".", ","),
-				"min_wd" => number_format($mfee->message->min_wd, 0, ".", ","),
+				"min_wd" => number_format($mfee->message->min_wd, 2, ".", ","),
 			);
 		} else {
 			$mdata = array(
@@ -141,6 +144,7 @@ class Fee extends CI_Controller
 				"min_wd" => number_format(0, 0, ".", ","),
 			);
 		}
+
 
 		$data = array(
 			"title"     => NAMETITLE . " - Edit Default Fee",
