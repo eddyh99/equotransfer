@@ -24,7 +24,7 @@
                             Withdraw Member
                         </a>
                         <a class="nav-link <?= @$mn_settings ?>" href="<?= base_url() ?>admin/cost/settings">
-                            <div class="sb-nav-link-icon"><i class="fas fa-money-check-alt"></i></div>
+                            <div class="sb-nav-link-icon"><i class="fas fa-cogs"></i></div>
                             Settings
                         </a>
                         <a class="nav-link" href="<?= base_url() ?>auth/logout">

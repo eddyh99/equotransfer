@@ -1916,8 +1916,6 @@ class Bank extends CI_Controller
 
         $result = apitrackless(URLAPI . "/v1/member/wallet/bankTransfer", json_encode($mdata));
 
-        // print_r(json_encode($result));
-        // die;
 
         if (@$result->code != 200) {
             if (@$result->code == 5055) {

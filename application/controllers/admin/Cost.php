@@ -69,20 +69,34 @@ class Cost extends CI_Controller
 	}
 	
 	public function settings(){
-	    $mfee = apitrackless(URLAPI . "/v1/admin/cost/getSettings");
+	    $statuswd = apitrackless(URLAPI . "/v1/admin/cost/getSettings");
+
         $data = array(
-			"title"     => NAMETITLE . " - Settings",
-			"content"   => "admin/settings/index",
-			"mn_settings"    => "active",
+			"title"     	=> NAMETITLE . " - Settings",
+			"content"   	=> "admin/settings/index",
+			"mn_settings"   => "active",
+			'status'		=> $statuswd->message
 		);
 
 		$this->load->view('admin_template/wrapper', $data);
 	}
 	
 	public function savesettings(){
-	    $autowd		= $this->security->xss_clean($_POST["autowd"]);
+	    $status		= $this->security->xss_clean($this->input->post('status'));
 
-		$res = apitrackless(URLAPI . "/v1/admin/cost/setSettings?autowd=" . $autowd);
-        redirect('admin/cost/settings');
+		if($status == 'on'){
+			$statuswd = 'yes';
+		}else{
+			$statuswd = 'no';
+		}
+
+		$ress = apitrackless(URLAPI . "/v1/admin/cost/setSettings?autowd=" . $statuswd);
+		if($ress->code == 200){
+			$this->session->set_flashdata('success', "Save setting successful");
+			redirect('admin/cost/settings');
+		}else{
+			$this->session->set_flashdata('failed', "Error save setting, please try again !");
+			redirect('admin/cost/settings');
+		}
 	}
 }

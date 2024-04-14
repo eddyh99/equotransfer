@@ -14,25 +14,45 @@ class Withdraw extends CI_Controller
     public function index()
     {
         $result=apitrackless(URLAPI . "/v1/admin/wallet/getPendingWD");//->message->balance;
-        // echo "<pre>".print_r($result,true)."</pre>";
-        // die;
+        
+
         $data = array(
-            "title"     => NAMETITLE . " - Withdraw Member",
-            "content"   => "admin/withdraw/withdraw_member",
-            "mn_withdraw"    => "active",
-            "extra"     => "admin/withdraw/js/js_index",
+            "title"         => NAMETITLE . " - Withdraw Member",
+            "content"       => "admin/withdraw/withdraw_member",
+            "mn_withdraw"   => "active",
+            "extra"         => "admin/withdraw/js/js_index",
+            "withdraw"      => $result->message,
         );
 
         $this->load->view('admin_template/wrapper', $data);
     }
     
-    public function prosesWD(){
-        $wisequote=$_POST["wisequote"];
-        $result=apitrackless(URLAPI . "/v1/admin/wallet/prosesWD?wisequote=".$wisequote);//->message->balance;
+    public function prosesWD($wisequote){
+        $quote = base64_decode($wisequote);
+
+        $result = apitrackless(URLAPI . "/v1/admin/wallet/prosesWD?wisequote=".$quote);
+        
+        if($result->code == 200){
+			$this->session->set_flashdata('success', "Proccess withdraw successful");
+			redirect('admin/withdraw');
+		}else{
+			$this->session->set_flashdata('failed', "Error proccess withdraw, please try again!");
+			redirect('admin/withdraw');
+		}
+
     }
     
-    public function cancelWD(){
-        $wisequote=$_POST["wisequote"];
-        $result=apitrackless(URLAPI . "/v1/admin/wallet/cancelWD?wisequote=".$wisequote);//->message->balance;
+    public function cancelWD($wisequote){
+        $quote = base64_decode($wisequote);
+
+        $result=apitrackless(URLAPI . "/v1/admin/wallet/cancelWD?wisequote=".$quote);
+
+        if($result->code == 200){
+			$this->session->set_flashdata('success', "Cancel withdraw successful");
+			redirect('admin/withdraw');
+		}else{
+			$this->session->set_flashdata('failed', "Error cancel withdraw, please try again!");
+			redirect('admin/withdraw');
+		}
     }
 }

@@ -13,27 +13,26 @@
         </div>
         <?php } ?>
         <form action="<?=base_url()?>admin/cost/savesettings" method="post">
-        <div class="container-fluid px-4">
-            <div class="col-12 card mb-5 mt-3">
-                <div class="card-header fw-bold">
-                    TRACKLESS BANK Cost
-                </div>
-                
+            <div class="container-fluid px-4">
+                <div class="col-12 card mb-5 mt-3">
+                    <div class="card-header fw-bold">
+                        Settings
+                    </div>
                     <div class="card-body shadow-sm">
-                        <div class="col">
-                            Activate Auto Withdraw 
-                        </div>
-                        <div class="col">
-                        <select name="autowd">
-                            <option value="no">No</option>
-                            <option value="yes">Yes</option>
-                        </select>
-                        </div>
-                        <div class="col">
-                            <button type="submit" name="submit">Save</button>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <input class="form-check-input pill-currency" name="status" type="checkbox" <?php echo ($status == 'yes') ? "checked" : "" ?>>
+                                    <span class="fw-semibold fs-5 ms-3">Auto Withdraw</h5>
+                                </div>
+                            </div>
+                            <div class="col-12 my-5">
+                                <button type="submit" class="btn btn-freedy-green px-3" name="submit">Save Settings</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
+        </form>
     </main>
 </div>
